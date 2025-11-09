@@ -1,38 +1,40 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // Year stamp
-  const yearEl = document.getElementById("year");
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-  // Footer language switch
-  const a = document.getElementById("lang-switch-footer");
+document.addEventListener('DOMContentLoaded', () => {
+  const a = document.getElementById('lang-switch-footer');
   if (!a) return;
 
-  const isFile = location.protocol === "file:";
-  const isEs = /(?:^|\/)es\//.test(location.pathname); // matches ".../es/..."
+  const target = computeLangCounterpart();
+  if (!target) return;
 
-  let label, href;
+  const isEs = /(?:^|\/)es(?:\/|$)/.test(location.pathname);
+  a.textContent = isEs ? 'English' : 'Español';
+  a.setAttribute('href', target);
+  a.setAttribute('lang', isEs ? 'en' : 'es');
+});
 
-  if (isFile) {
-    // Build RELATIVE URLs for local file:// browsing
-    if (isEs) {
-      label = "English";
-      href = new URL("../index.html", location.href).href; // /es/index.html -> ../index.html
-    } else {
-      label = "Español";
-      href = new URL("es/index.html", location.href).href; // /index.html -> es/index.html
-    }
-  } else {
-    // Build site-rooted URLs for http(s)
-    if (isEs) {
-      label = "English";
-      href = location.pathname.replace(/\/es\//, "/"); // e.g. /es/page/ -> /page/
-    } else {
-      label = "Español";
-      href = "/es" + location.pathname;
-    }
+/* same helper as navbar.js — keep in this file too */
+function computeLangCounterpart() {
+  const path = location.pathname;
+  const searchHash = (location.search || '') + (location.hash || '');
+
+  const anchors = ['/es/', '/content/', '/resources/', '/index.html'];
+  let idx = -1, anchor = '';
+  for (const a of anchors) {
+    const i = path.indexOf(a);
+    if (i !== -1 && (idx === -1 || i < idx)) { idx = i; anchor = a; }
+  }
+  if (idx === -1) {
+    const relFallback = path.replace(/^\//, '') || 'index.html';
+    const toggled = relFallback.startsWith('es/') ? relFallback.replace(/^es\//, '') : 'es/' + relFallback;
+    return location.origin + '/' + toggled + searchHash;
   }
 
-  a.textContent = label;
-  a.setAttribute("href", href);
-  a.setAttribute("lang", label.toLowerCase());
-});
+  const rootPath = path.slice(0, idx);
+  let rel = path.slice(idx);
+  if (rel.endsWith('/')) rel += 'index.html';
+  if (rel === '/index.html') rel = 'index.html';
+  else if (rel.startsWith('/')) rel = rel.slice(1);
+
+  const toggledRel = rel.startsWith('es/') ? rel.replace(/^es\//, '') : 'es/' + rel;
+
+  return location.origin + rootPath + (rootPath.endsWith('/') ? '' : '/') + toggledRel + searchHash;
+}
