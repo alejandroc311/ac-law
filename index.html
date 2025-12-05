@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
@@ -13,26 +17,79 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="sticky top-0 z-50 bg-white border-b">
+    <nav
+      class="sticky top-0 z-50 border-b"
+      style="
+        background-color: #ebd9c3; /* slightly darker cream than #f2e6d3 */
+        border-color: #cda45c;
+      "
+    >
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="h-16 flex items-center justify-between">
           <!-- Brand -->
-          <a href="/" class="shrink-0 text-base font-semibold tracking-tight">
+          <a
+            href="/"
+            class="shrink-0 text-2xl font-semibold tracking-tight"
+            style="
+              font-family: 'Cormorant Garamond', serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+          >
             Crespo &amp; Crespo
           </a>
 
           <!-- Desktop nav -->
           <div class="hidden md:flex items-center gap-6">
-            <a href="./index.html" class="text-sm">Home</a>
-            <a href="/bankruptcy/" class="text-sm">Resources</a>
-            <a href="/contact/" class="text-sm"> Contact </a>
+            <a
+              href="./index.html"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+            >
+              Home
+            </a>
+
+            <a
+              href="/bankruptcy/"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+            >
+              Resources
+            </a>
+
+            <a
+              href="/contact/"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+            >
+              Contact
+            </a>
+
             <a
               id="lang-switch-desktop"
               href="./es/"
-              class="text-sm"
               aria-label="Cambiar a español"
-              >Español</a
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
             >
+              Español
+            </a>
           </div>
 
           <!-- Mobile hamburger -->
@@ -46,11 +103,12 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="20"
+              height="20"
               fill="currentColor"
               class="bi bi-list"
               viewBox="0 0 16 16"
+              style="color: #3b372e"
             >
               <path
                 fill-rule="evenodd"
@@ -62,75 +120,160 @@
       </div>
 
       <!-- Mobile dropdown -->
-      <div id="mobile-menu" class="md:hidden hidden border-t">
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden border-t"
+        style="border-color: #cda45c"
+      >
         <div class="px-4 py-3 space-y-2">
-          <a href="./index.html" class="block text-sm">Home</a>
-          <a href="/bankruptcy/" class="block text-sm">Resources</a>
-          <a href="/contact/" class="block text-sm">Contact</a>
+          <a
+            href="./index.html"
+            class="block text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+          >
+            Home
+          </a>
+
+          <a
+            href="/bankruptcy/"
+            class="block text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+          >
+            Resources
+          </a>
+
+          <a
+            href="/contact/"
+            class="block text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+          >
+            Contact
+          </a>
+
           <a
             id="lang-switch-mobile"
             href="./es/"
-            class="block text-sm"
+            class="block text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
             aria-label="Cambiar a español"
-            >Español</a
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
           >
+            Español
+          </a>
         </div>
       </div>
     </nav>
+
     <!-- HERO (Section #2 only) -->
-    <section>
+    <section style="background-color: #f2e6d3">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div
           class="py-10 sm:py-14 md:py-16 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 items-center"
         >
           <!-- Copy -->
           <div class="md:col-span-7 lg:col-span-7 text-center md:text-left">
+            <!-- Heading -->
             <h1
               class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight"
+              style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
             >
               Stop foreclosure, garnishments, and collection lawsuits—fast.
             </h1>
 
+            <!-- Subheading -->
             <p
               class="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg opacity-90 max-w-prose mx-auto md:mx-0"
+              style="font-family: 'Montserrat', sans-serif; color: #3b372e"
             >
-              Bankruptcy protection pauses the chaos and gives you a plan.
+              Bankruptcy protection pauses the chaos and provides you with a way
+              forward towards a fresh start.
             </p>
 
+            <!-- CTAs -->
             <div
               class="mt-5 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 w-full max-w-md mx-auto md:mx-0 md:justify-start justify-center"
             >
+              <!-- Primary CTA -->
               <a
                 href="/contact/"
-                class="inline-flex justify-center items-center w-full min-w-[12rem] sm:w-auto px-4 py-2.5 text-sm sm:text-base rounded-md border border-black bg-black text-white text-center shadow-sm hover:!shadow-md hover:-translate-y-0.5 hover:!bg-white hover:!text-black active:translate-y-0 active:shadow-sm transition-colors transition-transform duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-black"
+                class="inline-flex justify-center items-center w-full min-w-[12rem] sm:w-auto px-4 py-2.5 text-sm sm:text-base rounded-md text-center shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  background-color: #3b372e;
+                  color: #f2e6d3;
+                  border: 1px solid #3b372e;
+                  text-decoration: none;
+                "
+                onmouseover="this.style.backgroundColor='#F2E6D3'; this.style.color='#3B372E';"
+                onmouseout="this.style.backgroundColor='#3B372E'; this.style.color='#F2E6D3';"
               >
                 Initial Case Review
               </a>
 
-              <!-- Secondary (outline) -->
+              <!-- Secondary CTA (gold outline) -->
               <a
                 href="/bankruptcy/automatic-stay/"
-                class="inline-flex justify-center items-center text-black w-full min-w-[12rem] sm:w-auto px-4 py-2.5 text-sm sm:text-base rounded-md border border-black text-center shadow-sm hover:!shadow-md hover:-translate-y-0.5 hover:bg-black hover:!text-white active:translate-y-0 active:shadow-sm transition-colors transition-transform duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-black"
+                class="inline-flex justify-center items-center w-full min-w-[12rem] sm:w-auto px-4 py-2.5 text-sm sm:text-base rounded-md text-center shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  color: #3b372e;
+                  border: 1px solid #cda45c;
+                  text-decoration: none;
+                "
+                onmouseover="this.style.backgroundColor='#CDA45C'; this.style.color='#F2E6D3';"
+                onmouseout="this.style.backgroundColor='transparent'; this.style.color='#3B372E';"
               >
                 How the Automatic Stay Works
               </a>
             </div>
           </div>
 
-          <!-- Reserved visual space (hidden on small; shows at md+) -->
+          <!-- Reserved visual space (md+) -->
           <div class="hidden md:block md:col-span-5">
-            <!-- Placeholder box; remove or replace with <img> later -->
-            <div class="w-full aspect-[5/6] border rounded-md"></div>
+            <div
+              class="w-full aspect-[5/6] rounded-md overflow-hidden shadow-sm"
+              style="border: 2px solid #cda45c"
+            >
+              <!-- TEMPORARY BRAND BLOCK -->
+              <div
+                class="w-full h-full"
+                style="background-color: #f2e6d3"
+              ></div>
+
+              <!-- OR drop in a real image later -->
+              <!-- <img src="/img/relief.jpg" class="w-full h-full object-cover" /> -->
+            </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- SECTION NO.3 GET HELP WITH -->
-    <section aria-labelledby="problems-title" class="py-8 sm:py-10 md:py-12">
+    <section
+      aria-labelledby="problems-title"
+      class="py-8 sm:py-10 md:py-12"
+      style="background-color: #f2e6d3; border-top: 1px solid #cda45c"
+    >
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2
           id="problems-title"
           class="text-lg sm:text-xl md:text-2xl font-semibold"
+          style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
         >
           What are you facing right now?
         </h2>
@@ -143,94 +286,206 @@
           <!-- Card 1: Garnishments -->
           <a
             href="./content/garnishment.html"
-            class="problem-card group rounded-md border p-4 sm:p-5 transition hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black"
+            class="problem-card group rounded-md border p-4 sm:p-5 transition hover:-translate-y-1 hover:shadow-md"
+            style="
+              border-color: #cda45c !important;
+              background-color: transparent;
+              text-decoration: none;
+            "
           >
             <div class="flex items-start gap-3">
               <i
                 class="bi bi-cash-coin text-xl sm:text-2xl"
                 aria-hidden="true"
+                style="color: #cda45c"
               ></i>
               <div>
-                <h3 class="text-base sm:text-lg font-medium">
-                  Wage & Account Garnishments
+                <h3
+                  class="text-base sm:text-lg font-semibold"
+                  style="
+                    font-family: 'Cormorant Garamond', serif;
+                    color: #3b372e;
+                  "
+                >
+                  Wage &amp; Account Garnishments
                 </h3>
-                <p class="mt-1 text-sm opacity-80">
+                <p
+                  class="mt-1 text-sm opacity-80"
+                  style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+                >
                   Stop the bleed by your next paycheck.
                 </p>
               </div>
             </div>
-            <div class="mt-3 flex items-center gap-2 text-sm opacity-70">
+            <div
+              class="mt-3 flex items-center gap-2 text-sm"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                opacity: 0.85;
+              "
+            >
               <span>Learn more</span>
-              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+              <i
+                class="bi bi-chevron-right"
+                aria-hidden="true"
+                style="color: #cda45c"
+              ></i>
             </div>
           </a>
 
           <!-- Card 2: Foreclosure -->
           <a
             href="./content/foreclosure.html"
-            class="problem-card rounded-md border p-4 sm:p-5 transition hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black"
+            class="problem-card group rounded-md border p-4 sm:p-5 transition hover:-translate-y-1 hover:shadow-md"
+            style="
+              border-color: #cda45c !important;
+              background-color: transparent;
+              text-decoration: none;
+            "
           >
             <div class="flex items-start gap-3">
               <i
                 class="bi bi-house-exclamation text-xl sm:text-2xl"
                 aria-hidden="true"
+                style="color: #cda45c"
               ></i>
               <div>
-                <h3 class="text-base sm:text-lg font-medium">Foreclosure</h3>
-                <p class="mt-1 text-sm opacity-80">
+                <h3
+                  class="text-base sm:text-lg font-semibold"
+                  style="
+                    font-family: 'Cormorant Garamond', serif;
+                    color: #3b372e;
+                  "
+                >
+                  Foreclosure
+                </h3>
+                <p
+                  class="mt-1 text-sm opacity-80"
+                  style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+                >
                   Stop the sale with a Chapter 13 plan.
                 </p>
               </div>
             </div>
-            <div class="mt-3 flex items-center gap-2 text-sm opacity-70">
+            <div
+              class="mt-3 flex items-center gap-2 text-sm"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                opacity: 0.85;
+              "
+            >
               <span>Learn more</span>
-              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+              <i
+                class="bi bi-chevron-right"
+                aria-hidden="true"
+                style="color: #cda45c"
+              ></i>
             </div>
           </a>
 
-          <!-- Card 3: Bust-Out (hidden on small; shown on md+; revealable on small) -->
+          <!-- Card 3: Bust-Out (local content page) -->
           <a
             id="card-bustout"
             href="./content/bustout.html"
-            class="hidden problem-card group rounded-md border p-4 sm:p-5 transition hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black"
+            class="hidden problem-card group rounded-md border p-4 sm:p-5 transition hover:-translate-y-1 hover:shadow-md"
+            style="
+              border-color: #cda45c !important;
+              background-color: transparent;
+              text-decoration: none;
+            "
           >
             <div class="flex items-start gap-3">
               <i
                 class="bi bi-credit-card-2-front text-xl sm:text-2xl"
                 aria-hidden="true"
+                style="color: #cda45c"
               ></i>
               <div>
-                <h3 class="text-base sm:text-lg font-medium">Drowning in Debt</h3>
-                <p class="mt-1 text-sm opacity-80">
+                <h3
+                  class="text-base sm:text-lg font-semibold"
+                  style="
+                    font-family: 'Cormorant Garamond', serif;
+                    color: #3b372e;
+                  "
+                >
+                  Drowning in Debt
+                </h3>
+                <p
+                  class="mt-1 text-sm opacity-80"
+                  style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+                >
                   Cards, medical bills, lawsuits—end the spiral.
                 </p>
               </div>
             </div>
-            <div class="mt-3 flex items-center gap-2 text-sm opacity-70">
+            <div
+              class="mt-3 flex items-center gap-2 text-sm"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                opacity: 0.85;
+              "
+            >
               <span>Learn more</span>
-              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+              <i
+                class="bi bi-chevron-right"
+                aria-hidden="true"
+                style="color: #cda45c"
+              ></i>
             </div>
           </a>
+
+          <!-- Card 3: Bust-Out (resources hub / SEO page) -->
           <a
             id="card-bustout"
             href="/bankruptcy/bust-out/"
-            class="hidden problem-card group rounded-md border p-4 sm:p-5 transition hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black"
+            class="hidden problem-card group rounded-md border p-4 sm:p-5 transition hover:-translate-y-1 hover:shadow-md"
+            style="
+              border-color: #cda45c !important;
+              background-color: transparent;
+              text-decoration: none;
+            "
           >
             <div class="flex items-start gap-3">
               <i
                 class="bi bi-credit-card-2-front text-xl sm:text-2xl"
                 aria-hidden="true"
+                style="color: #cda45c"
               ></i>
               <div>
-                <h3 class="text-base sm:text-lg font-medium">Drowning in Debt</h3>
-                <p class="mt-1 text-sm opacity-80">
+                <h3
+                  class="text-base sm:text-lg font-semibold"
+                  style="
+                    font-family: 'Cormorant Garamond', serif;
+                    color: #3b372e;
+                  "
+                >
+                  Drowning in Debt
+                </h3>
+                <p
+                  class="mt-1 text-sm opacity-80"
+                  style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+                >
                   Cards, medical bills, lawsuits—end the spiral.
                 </p>
               </div>
             </div>
-            <div class="mt-3 flex items-center gap-2 text-sm opacity-70">
+            <div
+              class="mt-3 flex items-center gap-2 text-sm"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                opacity: 0.85;
+              "
+            >
               <span>Learn more</span>
-              <i class="bi bi-chevron-right" aria-hidden="true"></i>
+              <i
+                class="bi bi-chevron-right"
+                aria-hidden="true"
+                style="color: #cda45c"
+              ></i>
             </div>
           </a>
         </div>
@@ -240,60 +495,107 @@
           <button
             id="problems-toggle"
             type="button"
-            class="inline-flex w-full items-center justify-center rounded-md border px-4 py-2.5 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black"
+            class="inline-flex w-full items-center justify-center rounded-md px-4 py-2.5 text-sm shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #f2e6d3;
+              background-color: #3b372e;
+              border: 1px solid #3b372e !important;
+              text-decoration: none;
+            "
+            onmouseover="this.style.backgroundColor='#F2E6D3'; this.style.color='#3B372E'; this.style.borderColor='#3B372E';"
+            onmouseout="this.style.backgroundColor='#3B372E'; this.style.color='#F2E6D3'; this.style.borderColor='#3B372E';"
             aria-controls="card-bustout"
             aria-expanded="false"
           >
             See more
           </button>
         </div>
+
         <!-- More resources (hidden by default; mobile only) -->
         <div class="mt-3">
           <a
             id="problems-more-link"
             href="./resources/resources.html"
-            class="hidden inline-flex w-full items-center justify-center rounded-md border px-4 py-2.5 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black"
+            class="hidden inline-flex w-full items-center justify-center rounded-md px-4 py-2.5 text-sm sm:text-base shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              border: 1px solid #cda45c;
+              background-color: transparent;
+              text-decoration: none;
+            "
+            onmouseover="this.style.backgroundColor='#CDA45C'; this.style.color='#F2E6D3';"
+            onmouseout="this.style.backgroundColor='transparent'; this.style.color='#3B372E';"
           >
             More resources
           </a>
         </div>
       </div>
     </section>
-
-    <hr class="mt-6 sm:mt-8 w-4/5 mx-auto border-t border-neutral-200" />
     <!-- SECTION 4: How it works (compact hub card) -->
-    <section aria-labelledby="how-title" class="py-8 sm:py-10 md:py-12">
+    <section
+      aria-labelledby="how-title"
+      class="py-8 sm:py-10 md:py-12"
+      style="background-color: #f2e6d3; border-top: 1px solid #cda45c"
+    >
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div>
           <h2
             id="how-title"
             class="text-lg sm:text-xl md:text-2xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
           >
             How it works
           </h2>
-          <p class="mt-2 text-sm sm:text-base opacity-85 max-w-prose">
+
+          <p
+            class="mt-2 text-sm sm:text-base opacity-85 max-w-prose"
+            style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+          >
             Start where you are: stop urgent actions, understand what you keep,
             or see if you qualify.
           </p>
 
           <!-- Three key links -->
-          <ul class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 !pl-0">
+          <ul
+            class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 !pl-0"
+            style="list-style: none; padding-left: 0; margin: 0"
+          >
             <!-- Stop Garnishments & Foreclosures -->
             <li class="h-full">
               <a
                 href="/bankruptcy/automatic-stay/"
-                class="h-full flex flex-col block rounded-md border p-4 text-sm sm:text-base leading-snug transition hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black"
+                class="h-full flex flex-col block rounded-md border p-4 text-sm sm:text-base leading-snug transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-none focus-visible:ring-2"
+                style="
+                  border-color: #cda45c !important;
+                  background-color: transparent;
+                  text-decoration: none;
+                "
               >
                 <div class="flex items-start gap-3">
                   <i
                     class="bi bi-shield-exclamation text-xl sm:text-2xl"
                     aria-hidden="true"
+                    style="color: #cda45c"
                   ></i>
                   <div class="flex-1">
-                    <span class="font-medium"
-                      >Stop Garnishments &amp; Foreclosures</span
+                    <h3
+                      class="text-base sm:text-lg font-semibold"
+                      style="
+                        font-family: 'Cormorant Garamond', serif;
+                        color: #3b372e;
+                      "
                     >
-                    <p class="mt-1 opacity-80">
+                      Stop Garnishments &amp; Foreclosures
+                    </h3>
+                    <p
+                      class="mt-1 text-sm opacity-80"
+                      style="
+                        font-family: 'Montserrat', sans-serif;
+                        color: #3b372e;
+                      "
+                    >
                       How the Automatic Stay freezes collections.
                     </p>
                   </div>
@@ -305,16 +607,36 @@
             <li class="h-full">
               <a
                 href="/bankruptcy/exemptions/"
-                class="h-full flex flex-col block rounded-md border p-4 text-sm sm:text-base leading-snug transition hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black"
+                class="h-full flex flex-col block rounded-md border p-4 text-sm sm:text-base leading-snug transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-none focus-visible:ring-2"
+                style="
+                  border-color: #cda45c !important;
+                  background-color: transparent;
+                  text-decoration: none;
+                "
               >
                 <div class="flex items-start gap-3">
                   <i
                     class="bi bi-safe2 text-xl sm:text-2xl"
                     aria-hidden="true"
+                    style="color: #cda45c"
                   ></i>
                   <div class="flex-1">
-                    <span class="font-medium">What You Keep</span>
-                    <p class="mt-1 opacity-80">
+                    <h3
+                      class="text-base sm:text-lg font-semibold"
+                      style="
+                        font-family: 'Cormorant Garamond', serif;
+                        color: #3b372e;
+                      "
+                    >
+                      What You Keep
+                    </h3>
+                    <p
+                      class="mt-1 text-sm opacity-80"
+                      style="
+                        font-family: 'Montserrat', sans-serif;
+                        color: #3b372e;
+                      "
+                    >
                       Exemptions for home, car, wages, and more.
                     </p>
                   </div>
@@ -326,16 +648,36 @@
             <li class="h-full">
               <a
                 href="/bankruptcy/means-test/"
-                class="h-full flex flex-col block rounded-md border p-4 text-sm sm:text-base leading-snug transition hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black"
+                class="h-full flex flex-col block rounded-md border p-4 text-sm sm:text-base leading-snug transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-none focus-visible:ring-2"
+                style="
+                  border-color: #cda45c !important;
+                  background-color: transparent;
+                  text-decoration: none;
+                "
               >
                 <div class="flex items-start gap-3">
                   <i
                     class="bi bi-clipboard-check text-xl sm:text-2xl"
                     aria-hidden="true"
+                    style="color: #cda45c"
                   ></i>
                   <div class="flex-1">
-                    <span class="font-medium">Do I Qualify?</span>
-                    <p class="mt-1 opacity-80">
+                    <h3
+                      class="text-base sm:text-lg font-semibold"
+                      style="
+                        font-family: 'Cormorant Garamond', serif;
+                        color: #3b372e;
+                      "
+                    >
+                      Do I Qualify?
+                    </h3>
+                    <p
+                      class="mt-1 text-sm opacity-80"
+                      style="
+                        font-family: 'Montserrat', sans-serif;
+                        color: #3b372e;
+                      "
+                    >
                       Chapter 7 vs 13 eligibility in plain English.
                     </p>
                   </div>
@@ -344,66 +686,115 @@
             </li>
           </ul>
 
-          <!-- CTA to full process/resources -->
+          <!-- CTA to full process/resources (PRIMARY filled) -->
           <div class="mt-5 sm:mt-6">
             <a
               href="./resources/resources.html"
-              class="inline-flex !w-full sm:w-auto items-center justify-center rounded-md border px-4 py-2.5 text-sm sm:text-base transition hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black"
+              class="inline-flex !w-full sm:w-auto items-center justify-center rounded-md px-4 py-2.5 text-sm sm:text-base shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #f2e6d3;
+                border: 1px solid #3b372e !important;
+                background-color: #3b372e;
+                text-decoration: none;
+              "
+              onmouseover="this.style.backgroundColor='#F2E6D3'; this.style.color='#3B372E';"
+              onmouseout="this.style.backgroundColor='#3B372E'; this.style.color='#F2E6D3';"
             >
-              See the full process &amp; resources
+              See more resources
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <hr class="mt-6 sm:mt-8 w-4/5 mx-auto border-t border-neutral-200" />
-
     <!-- RESULTS & TRUST -->
     <!-- RESULTS & TRUST — stat strip (no cards) -->
-    <section aria-labelledby="results-title" class="py-8 sm:py-10 md:py-12">
+    <section
+      aria-labelledby="results-title"
+      class="py-8 sm:py-10 md:py-12"
+      style="background-color: #f2e6d3; border-top: 1px solid #cda45c"
+    >
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2
           id="results-title"
           class="text-lg sm:text-xl md:text-2xl font-semibold"
+          style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
         >
           Results &amp; Trust
         </h2>
 
         <!-- Stat strip -->
         <ul
-          class="mt-4 grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-neutral-200 list-none p-0 m-0 rounded-none"
+          class="mt-4 grid grid-cols-1 md:grid-cols-3 list-none p-0 m-0 rounded-none"
+          style="
+            border-top: 1px solid #e0d0b8;
+            border-bottom: 1px solid #e0d0b8;
+          "
         >
-          <li class="py-4 sm:py-5 px-1 text-center">
-            <p class="text-sm sm:text-base font-medium">
+          <li
+            class="py-4 sm:py-5 px-3 text-center md:border-r"
+            style="border-color: #e0d0b8"
+          >
+            <p
+              class="text-sm sm:text-base font-medium"
+              style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+            >
               Ended garnishments
               <span class="whitespace-nowrap">within days</span>
             </p>
-            <p class="mt-1 text-xs opacity-75">
+            <p
+              class="mt-1 text-xs opacity-75"
+              style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+            >
               Relief often begins with the first post-filing paycheck.
             </p>
           </li>
-          <li class="py-4 sm:py-5 px-1 text-center">
-            <p class="text-sm sm:text-base font-medium">
+
+          <li
+            class="py-4 sm:py-5 px-3 text-center md:border-r"
+            style="border-color: #e0d0b8"
+          >
+            <p
+              class="text-sm sm:text-base font-medium"
+              style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+            >
               Stopped foreclosures
               <span class="whitespace-nowrap">on their eve</span>
             </p>
-            <p class="mt-1 text-xs opacity-75">
+            <p
+              class="mt-1 text-xs opacity-75"
+              style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+            >
               Emergency filings can halt scheduled auctions.
             </p>
           </li>
-          <li class="py-4 sm:py-5 px-1 text-center">
-            <p class="text-sm sm:text-base font-medium">
+
+          <li class="py-4 sm:py-5 px-3 text-center">
+            <p
+              class="text-sm sm:text-base font-medium"
+              style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+            >
               Discharged millions <span class="whitespace-nowrap">in debt</span>
             </p>
-            <p class="mt-1 text-xs opacity-75">
+            <p
+              class="mt-1 text-xs opacity-75"
+              style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+            >
               Credit cards, medical bills, collections, and more.
             </p>
           </li>
         </ul>
 
         <!-- Disclaimer -->
-        <div class="mt-4 text-xs opacity-70 leading-relaxed">
+        <div
+          class="mt-4 text-xs leading-relaxed"
+          style="
+            font-family: 'Montserrat', sans-serif;
+            color: #3b372e;
+            opacity: 0.75;
+          "
+        >
           <p>
             <strong>Attorney Advertising.</strong> Past results do not guarantee
             a similar outcome. Results vary by facts, timing, and jurisdiction.
@@ -413,140 +804,320 @@
         </div>
       </div>
     </section>
-    <hr class="mt-6 sm:mt-8 w-4/5 mx-auto border-t border-neutral-200" />
 
     <!-- SECTION 6: FAQ -->
-    <section aria-labelledby="faq-title" class="py-8 sm:py-10 md:py-12">
+    <section
+      aria-labelledby="faq-title"
+      class="py-8 sm:py-10 md:py-12"
+      style="background-color: #f2e6d3; border-top: 1px solid #cda45c"
+    >
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 id="faq-title" class="text-lg sm:text-xl md:text-2xl font-semibold">
+        <h2
+          id="faq-title"
+          class="text-lg sm:text-xl md:text-2xl font-semibold"
+          style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+        >
           FAQs
         </h2>
 
-        <ul class="mt-4 divide-y divide-neutral-200 list-none p-0 m-0">
+        <ul
+          class="mt-4 list-none p-0 m-0"
+          style="border-top: 1px solid #e0d0b8"
+        >
           <!-- Q1 -->
-          <li class="py-3">
+          <li class="py-3 sm:py-4" style="border-bottom: 1px solid #e0d0b8">
             <details class="group">
               <summary
-                class="flex cursor-pointer items-center justify-between text-sm sm:text-base"
+                class="flex cursor-pointer items-center justify-between"
+                style="
+                  font-family: 'Cormorant Garamond', serif;
+                  color: #3b372e;
+                  font-size: 1.25rem; /* header ~20% larger */
+                  list-style: none;
+                "
               >
                 <span>Will I lose my home?</span>
+                <i
+                  class="bi bi-chevron-right"
+                  aria-hidden="true"
+                  style="color: #cda45c; font-size: 0.9rem"
+                ></i>
               </summary>
-              <div class="mt-2 text-sm opacity-90">
+
+              <div
+                class="mt-2 opacity-90"
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  color: #3b372e;
+                  font-size: 0.75rem; /* body ~20% smaller */
+                  border-left: 2px solid #cda45c;
+                  padding-left: 0.75rem;
+                  margin-left: 0.25rem;
+                  line-height: 1.5;
+                "
+              >
                 A bankruptcy filing can halt a scheduled sale. Many homeowners
                 keep their homes by curing arrears in a Chapter 13 plan. Learn
-                more in
-                <a href="/bankruptcy/chapter-13-feasibility/" class="underline"
-                  >Chapter 13 feasibility</a
-                >.
+                more in:
+                <a
+                  href="/bankruptcy/chapter-13-feasibility/"
+                  class="underline"
+                  style="color: #3b372e"
+                >
+                  Chapter 13 feasibility
+                </a>
+                .
               </div>
             </details>
           </li>
 
           <!-- Q2 -->
-          <li class="py-3">
+          <li class="py-3 sm:py-4" style="border-bottom: 1px solid #e0d0b8">
             <details class="group">
               <summary
-                class="flex cursor-pointer items-center justify-between text-sm sm:text-base"
+                class="flex cursor-pointer items-center justify-between"
+                style="
+                  font-family: 'Cormorant Garamond', serif;
+                  color: #3b372e;
+                  font-size: 1.25rem;
+                  list-style: none;
+                "
               >
                 <span>Will I lose my stuff?</span>
+                <i
+                  class="bi bi-chevron-right"
+                  aria-hidden="true"
+                  style="color: #cda45c; font-size: 0.9rem"
+                ></i>
               </summary>
-              <div class="mt-2 text-sm opacity-90">
-                Most filers keep essential property using exemptions (home
+
+              <div
+                class="mt-2 opacity-90"
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  color: #3b372e;
+                  font-size: 0.75rem;
+                  border-left: 2px solid #cda45c;
+                  padding-left: 0.75rem;
+                  margin-left: 0.25rem;
+                  line-height: 1.5;
+                "
+              >
+                Most filers keep their essential property using exemptions (home
                 equity, vehicle, household goods, wages, etc.). See what’s
-                protected in
-                <a href="/bankruptcy/exemptions/" class="underline"
-                  >Bankruptcy exemptions</a
-                >.
+                protected in:
+                <a
+                  href="/bankruptcy/exemptions/"
+                  class="underline"
+                  style="color: #3b372e"
+                >
+                  Bankruptcy exemptions
+                </a>
+                .
               </div>
             </details>
           </li>
 
           <!-- Q3 -->
-          <li class="py-3">
+          <li class="py-3 sm:py-4" style="border-bottom: 1px solid #e0d0b8">
             <details class="group">
               <summary
-                class="flex cursor-pointer items-center justify-between text-sm sm:text-base"
+                class="flex cursor-pointer items-center justify-between"
+                style="
+                  font-family: 'Cormorant Garamond', serif;
+                  color: #3b372e;
+                  font-size: 1.25rem;
+                  list-style: none;
+                "
               >
                 <span>How fast will it stop collections?</span>
+                <i
+                  class="bi bi-chevron-right"
+                  aria-hidden="true"
+                  style="color: #cda45c; font-size: 0.9rem"
+                ></i>
               </summary>
-              <div class="mt-2 text-sm opacity-90">
+
+              <div
+                class="mt-2 opacity-90"
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  color: #3b372e;
+                  font-size: 0.75rem;
+                  border-left: 2px solid #cda45c;
+                  padding-left: 0.75rem;
+                  margin-left: 0.25rem;
+                  line-height: 1.5;
+                "
+              >
                 Immediately upon filing, the automatic stay stops calls,
                 lawsuits, garnishments, and foreclosures. See how it works:
-                <a href="/bankruptcy/automatic-stay/" class="underline"
-                  >Automatic Stay</a
-                >.
+                <a
+                  href="/bankruptcy/automatic-stay/"
+                  class="underline"
+                  style="color: #3b372e"
+                >
+                  Automatic Stay
+                </a>
+                .
               </div>
             </details>
           </li>
 
           <!-- Q4 -->
-          <li class="py-3">
+          <li class="py-3 sm:py-4" style="border-bottom: 1px solid #e0d0b8">
             <details class="group">
               <summary
-                class="flex cursor-pointer items-center justify-between text-sm sm:text-base"
+                class="flex cursor-pointer items-center justify-between"
+                style="
+                  font-family: 'Cormorant Garamond', serif;
+                  color: #3b372e;
+                  font-size: 1.25rem;
+                  list-style: none;
+                "
               >
                 <span>Can I include my student loans?</span>
+                <i
+                  class="bi bi-chevron-right"
+                  aria-hidden="true"
+                  style="color: #cda45c; font-size: 0.9rem"
+                ></i>
               </summary>
-              <div class="mt-2 text-sm opacity-90">
-                Generally not discharged unless you prove undue hardship through
-                a separate process. Get the limits here:
-                <a href="/bankruptcy/what-bankruptcy-cant-do/" class="underline"
-                  >What bankruptcy can’t do</a
-                >.
+
+              <div
+                class="mt-2 opacity-90"
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  color: #3b372e;
+                  font-size: 0.75rem;
+                  border-left: 2px solid #cda45c;
+                  padding-left: 0.75rem;
+                  margin-left: 0.25rem;
+                  line-height: 1.5;
+                "
+              >
+                Generally, student loans are not discharged unless you prove
+                undue hardship through a separate process. Get the limits here:
+                <a
+                  href="/bankruptcy/what-bankruptcy-cant-do/"
+                  class="underline"
+                  style="color: #3b372e"
+                >
+                  What bankruptcy can’t do
+                </a>
+                .
               </div>
             </details>
           </li>
 
           <!-- Q5 -->
-          <li class="py-3">
+          <li class="py-3 sm:py-4" style="border-bottom: 1px solid #e0d0b8">
             <details class="group">
               <summary
-                class="flex cursor-pointer items-center justify-between text-sm sm:text-base"
+                class="flex cursor-pointer items-center justify-between"
+                style="
+                  font-family: 'Cormorant Garamond', serif;
+                  color: #3b372e;
+                  font-size: 1.25rem;
+                  list-style: none;
+                "
               >
                 <span>Do I have to go to court?</span>
+                <i
+                  class="bi bi-chevron-right"
+                  aria-hidden="true"
+                  style="color: #cda45c; font-size: 0.9rem"
+                ></i>
               </summary>
-              <div class="mt-2 text-sm opacity-90">
-                You’ll attend a short 341 “meeting of creditors” (usually
-                virtual/phone). It’s not a courtroom hearing. What to expect:
-                <a href="/bankruptcy/341-meeting/" class="underline"
-                  >Your 341 meeting</a
-                >.
+
+              <div
+                class="mt-2 opacity-90"
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  color: #3b372e;
+                  font-size: 0.75rem;
+                  border-left: 2px solid #cda45c;
+                  padding-left: 0.75rem;
+                  margin-left: 0.25rem;
+                  line-height: 1.5;
+                "
+              >
+                You’ll attend a short 341 “meeting of creditors” (usually by
+                phone or video). It’s not a courtroom hearing. What to expect:
+                <a
+                  href="/bankruptcy/341-meeting/"
+                  class="underline"
+                  style="color: #3b372e"
+                >
+                  Your 341 meeting
+                </a>
+                .
               </div>
             </details>
           </li>
         </ul>
       </div>
     </section>
+
     <!-- FINAL CTA (not the footer) -->
-    <section aria-labelledby="final-cta-title" class="py-4 sm:py-6 md:py-4">
+    <section
+      aria-labelledby="final-cta-title"
+      class="py-8 sm:py-10 md:py-12"
+      style="background-color: #f2e6d3; border-top: 1px solid #cda45c"
+    >
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="text-center md:text-left">
+        <div class="text-center">
+          <!-- Heading -->
           <h2
             id="final-cta-title"
-            class="text-lg sm:text-xl md:text-2xl font-semibold"
+            class="text-xl sm:text-2xl md:text-3xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
           >
             Ready to stop the spiral?
           </h2>
-          <p class="mt-2 text-sm sm:text-base opacity-85">
-            Take 2 minutes to see your options—no pressure, just clarity.
+
+          <!-- Subtext -->
+          <p
+            class="mt-2 text-sm sm:text-base opacity-90 max-w-prose mx-auto"
+            style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+          >
+            Take 2 minutes to see your options — no pressure, just clarity.
           </p>
 
-          <div
-            class="mt-3 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center"
-          >
-            <!-- Primary (filled) -->
+          <!-- CTA Button -->
+          <div class="mt-4 sm:mt-6 flex justify-center">
             <a
               href="/contact/"
-              class="inline-flex justify-center items-center w-full sm:w-auto px-4 py-2.5 text-sm sm:text-base rounded-md border border-black bg-black text-white shadow-sm hover:-translate-y-0.5 hover:!bg-white hover:!text-black hover:shadow-md active:translate-y-0 active:shadow-sm transition duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-black"
+              class="inline-flex justify-center items-center w-full sm:w-auto px-5 py-2.5 text-sm sm:text-base rounded-md shadow-sm transition duration-200 ease-out hover:-translate-y-0.5"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                background-color: #3b372e;
+                color: #f2e6d3;
+                border: 1px solid #3b372e;
+                text-decoration: none;
+              "
+              onmouseover="this.style.backgroundColor='#CDA45C'; this.style.color='#F2E6D3'; this.style.borderColor='#CDA45C';"
+              onmouseout="this.style.backgroundColor='#3B372E'; this.style.color='#F2E6D3'; this.style.borderColor='#3B372E';"
             >
               Initial Case Review
             </a>
           </div>
 
-          <!-- Phone line (optional but recommended) -->
-          <p class="mt-2 text-xs sm:text-sm opacity-80">
+          <!-- Phone Line -->
+          <p
+            class="mt-3 text-xs sm:text-sm opacity-85"
+            style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+          >
             Prefer to talk?
-            <a href="tel:+19045550123" class="underline">Call (904) 555-0123</a>
+            <a
+              href="tel:+19045550123"
+              class="underline"
+              style="color: #3b372e"
+              onmouseover="this.style.color='#CDA45C';"
+              onmouseout="this.style.color='#3B372E';"
+            >
+              Call (904) 555-0123
+            </a>
           </p>
         </div>
       </div>
@@ -554,23 +1125,49 @@
 
     <!-- FOOTER (clean horizontal only) -->
     <!-- FOOTER (tight single column) -->
-    <footer class="border-t">
+    <footer
+      class="border-t"
+      style="background-color: #f2e6d3; border-color: #cda45c"
+    >
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="py-6 sm:py-8">
-          <div class="text-base font-semibold tracking-tight">Crespo &amp; Crespo</div>
-          <p class="mt-1 text-sm opacity-80">
-            Managing Partner licensed in Florida: <span class="font-medium">Alejandro Crespo</span
-            ><br />
+          <!-- Firm Name -->
+          <div
+            class="text-xl font-semibold tracking-tight"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            Crespo &amp; Crespo
+          </div>
+
+          <!-- Licensing / Info -->
+          <p
+            class="mt-1 text-sm opacity-90 leading-relaxed"
+            style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+          >
+            Managing Partner licensed in Florida:
+            <span style="font-weight: 600">Alejandro Crespo</span>
+            <br />
             Licensed in Florida &amp; Puerto Rico
           </p>
+
+          <!-- Language Toggle -->
           <div class="mt-3 text-sm">
             <a
               id="lang-switch-footer"
-              class="underline"
               href="./es/"
-              aria-label="Change language"
-              >Español</a
+              aria-label="Cambiar a español"
+              class="transition-colors duration-150"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+                border-bottom: 1px solid #cda45c;
+              "
+              onmouseover="this.style.color='#CDA45C';"
+              onmouseout="this.style.color='#3B372E';"
             >
+              Español
+            </a>
           </div>
         </div>
       </div>
