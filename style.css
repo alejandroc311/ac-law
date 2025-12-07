@@ -1,0 +1,5 @@
+@media (max-width: 411px) {
+  html {
+    font-size: 88% !important;  /* reduces all text sizes by ~10% */
+  }
+}
