@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./../../style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,26 +18,76 @@
     <title>Ejecuciones de Hipoteca</title>
   </head>
   <body>
-    <nav class="sticky top-0 z-50 bg-white border-b">
+    <nav
+      class="sticky top-0 z-50 border-b"
+      style="background-color: #ebd9c3; border-color: #cda45c"
+    >
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="h-16 flex items-center justify-between">
           <!-- Brand -->
-          <a href="/" class="shrink-0 text-base font-semibold tracking-tight">
+          <a
+            href="/"
+            class="shrink-0 text-2xl font-semibold tracking-tight"
+            style="
+              font-family: 'Cormorant Garamond', serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+          >
             Crespo &amp; Crespo
           </a>
 
           <!-- Desktop nav -->
           <div class="hidden md:flex items-center gap-6">
-            <a href="./../index.html" class="text-sm">Inicio</a>
-            <a href="/bankruptcy/" class="text-sm">Recursos</a>
-            <a href="/contact/" class="text-sm"> Contacto </a>
+            <a
+              href="./../index.html"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+            >
+              Inicio
+            </a>
+
+            <a
+              href="./../resources/resources.html"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+            >
+              Recursos
+            </a>
+
+            <a
+              href="/contact/"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+            >
+              Contacto
+            </a>
+
             <a
               id="lang-switch-desktop"
               href="./../index.html"
-              class="text-sm"
               aria-label="Switch to English"
-              >English</a
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
             >
+              English
+            </a>
           </div>
 
           <!-- Mobile hamburger -->
@@ -46,11 +101,12 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="20"
+              height="20"
               fill="currentColor"
               class="bi bi-list"
               viewBox="0 0 16 16"
+              style="color: #3b372e"
             >
               <path
                 fill-rule="evenodd"
@@ -62,43 +118,113 @@
       </div>
 
       <!-- Mobile dropdown -->
-      <div id="mobile-menu" class="md:hidden hidden border-t">
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden border-t"
+        style="border-color: #cda45c"
+      >
         <div class="px-4 py-3 space-y-2">
-          <a href="./../index.html" class="block text-sm">Inicio</a>
-          <a href="/bankruptcy/" class="block text-sm">Recursos</a>
-          <a href="/contact/" class="block text-sm">Contacto</a>
+          <a
+            href="./../index.html"
+            class="block text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+          >
+            Inicio
+          </a>
+
+          <a
+            href="./../resources/resources.html"
+            class="block text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+          >
+            Recursos
+          </a>
+
+          <a
+            href="/contact/"
+            class="block text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+          >
+            Contacto
+          </a>
+
           <a
             id="lang-switch-mobile"
             href="./../index.html"
-            class="block text-sm"
             aria-label="Switch to English"
-            >English</a
+            class="block text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
           >
+            English
+          </a>
         </div>
       </div>
     </nav>
-    <main id="content" class="py-8 sm:py-10 md:py-12">
+
+    <main
+      id="content"
+      class="py-8 sm:py-10 md:py-12"
+      style="background-color: #f2e6d3; border-top: 1px solid #cda45c"
+    >
       <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <!-- Title -->
         <h1
-          class="text-2xl sm:text-3xl font-semibold tracking-tight text-center"
+          class="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-center"
+          style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
         >
           Ejecución de Hipoteca: Un Aviso que Nadie Quiere Ver
         </h1>
 
-        <!-- Top CTA (horizontal + centered on md+) -->
+        <!-- Top CTA (primary + secondary, centered) -->
         <div
           class="mt-4 w-full flex flex-col md:flex-row gap-3 md:gap-4 md:justify-center md:items-center"
         >
+          <!-- Primary CTA -->
           <a
             href="/contact/"
-            class="inline-flex justify-center items-center w-full min-w-[12rem] sm:w-auto px-4 py-2.5 text-sm sm:text-base rounded-md border border-black bg-black text-white text-center shadow-sm hover:!shadow-md hover:-translate-y-0.5 hover:!bg-white hover:!text-black active:translate-y-0 active:shadow-sm transition-colors transition-transform duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-black"
+            class="inline-flex justify-center items-center w-full min-w-[12rem] sm:w-auto px-4 py-2.5 text-sm sm:text-base rounded-md text-center shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              background-color: #3b372e;
+              color: #f2e6d3;
+              border: 1px solid #3b372e;
+              text-decoration: none;
+            "
+            onmouseover="this.style.backgroundColor='#CDA45C'; this.style.color='#F2E6D3'; this.style.borderColor='#CDA45C';"
+            onmouseout="this.style.backgroundColor='#3B372E'; this.style.color='#F2E6D3'; this.style.borderColor='#3B372E';"
           >
             Consulta Inicial
           </a>
+
+          <!-- Secondary CTA (outline with GOLD) -->
           <a
             href="tel:+19045550123"
-            class="inline-flex justify-center items-center w-full md:w-auto md:min-w-48 px-4 py-2.5 text-sm sm:text-base rounded-md underline text-center"
+            class="inline-flex justify-center items-center w-full md:w-auto md:min-w-48 px-4 py-2.5 text-sm sm:text-base rounded-md text-center shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              border: 1px solid #cda45c;
+              background-color: transparent;
+              text-decoration: none;
+            "
+            onmouseover="this.style.backgroundColor='#CDA45C'; this.style.color='#F2E6D3';"
+            onmouseout="this.style.backgroundColor='transparent'; this.style.color='#3B372E';"
           >
             O llame al (904) 555-0123
           </a>
@@ -107,65 +233,75 @@
         <!-- Article -->
         <article
           class="prose prose-neutral max-w-none text-[0.95rem] sm:text-base leading-relaxed mt-6"
+          style="font-family: 'Montserrat', sans-serif; color: #3b372e"
         >
           <p>
             Tal vez un día perdió su empleo y no pudo seguir haciendo los pagos
             de su hipoteca. Tal vez el desempleo no llegó a tiempo, o cuando
-            llegó, no era suficiente para cubrir las cuentas. Tal
-            vez se lesionó en el trabajo o quedó incapacitado, y entre citas
-            médicas y medicamentos, ni el seguro social ni el fondo del seguro del estado
-            alcanzaban para cubrir sus gastos y la hipoteca. Tal vez no
-            esperaba el aumento en el valor de la propiedad y los impuestos más
-            altos que le siguieron, y de repente el municipio le envió un aviso de
-            gravamen contributivo. Tal vez se atrasó en las cuotas de mantenimiento de su Asociación de Residentes
-            o Condominio (no por falta de interés, sino porque todo seguía
-            subiendo de precio y el dinero no le alcanzaba) y ahora están ejecutando ese gravamen. Tal vez
-            trabajaba dos empleos para sobrevivir y perdió uno, y no cualificó
-            para desempleo ni para mitigación de pérdida. O tal vez el banco
-            simplemente fue abusivo y se negó a modificar, a escuchar o a
+            llegó, no era suficiente para cubrir las cuentas. Tal vez se lesionó
+            en el trabajo o quedó incapacitado, y entre citas médicas y
+            medicamentos, ni el seguro social ni el fondo del seguro del estado
+            alcanzaban para cubrir sus gastos y la hipoteca. Tal vez no esperaba
+            el aumento en el valor de la propiedad y los impuestos más altos que
+            le siguieron, y de repente el municipio le envió un aviso de
+            gravamen contributivo. Tal vez se atrasó en las cuotas de
+            mantenimiento de su Asociación de Residentes o Condominio (no por
+            falta de interés, sino porque todo seguía subiendo de precio y el
+            dinero no le alcanzaba) y ahora están ejecutando ese gravamen. Tal
+            vez trabajaba dos empleos para sobrevivir y perdió uno, y no
+            cualificó para desempleo ni para mitigación de pérdida. O tal vez el
+            banco simplemente fue abusivo y se negó a modificar, a escuchar o a
             ayudar.
           </p>
 
           <p>
             No importa cuál de estas razones lo trajo hasta aquí. Lo que importa
-            es que ahora ha recibido una notificación de Aviso de Venta Judicial, 
-            y le cae encima esa sensación abrumadora: "van a subastar
-            mi hogar en 60 días. Me van a desahuciar."
+            es que ahora ha recibido una notificación de Aviso de Venta
+            Judicial, y le cae encima esa sensación abrumadora: “van a subastar
+            mi hogar en 60 días. Me van a desahuciar.”
           </p>
 
           <p>
             Es uno de los momentos más fuertes que una persona puede enfrentar;
-            cuando el lugar donde construyó su vida, las paredes que guardan
-            los recuerdos de su familia, de momento quedan en la cuerda floja por
+            cuando el lugar donde construyó su vida, las paredes que guardan los
+            recuerdos de su familia, de momento quedan en la cuerda floja por
             circunstancias que nunca pudo controlar del todo.
           </p>
 
           <p>
             Pero hay algo que muchos no saben: la ley federal le da una forma
-            inmediata de detenerlo. Una radicación de Quiebra puede paralizar y
+            inmediata de detenerlo. Una radicación de Quiebras puede paralizar y
             cancelar cualquier venta o subasta judicial
-            <a href="/resources/automatic-stay.html" class="underline"
-              >en el mismo momento en que se radica</a
-            >. Desde ese instante, usted queda bajo la protección del Tribunal Federal.
-            No más llamadas. No más conteo regresivo. El proceso se detiene, y
-            por fin puede respirar.
+            <a
+              href="/resources/automatic-stay.html"
+              class="underline"
+              style="color: #3b372e"
+              onmouseover="this.style.color='#CDA45C';"
+              onmouseout="this.style.color='#3B372E';"
+            >
+              en el mismo momento en que se radica
+            </a>
+            . Desde ese instante, usted queda bajo la protección del Tribunal
+            Federal. No más llamadas. No más conteo regresivo. El proceso se
+            detiene, y por fin puede respirar.
           </p>
 
           <p>
             A partir de ahí, analizamos lo que es posible. En muchos de estos
             casos, un plan de pago bajo el Capítulo 13 le permite ponerse al día
-            con su hipoteca o con sus atrasos contributivos a través del tiempo, todo
-            mientras mantiene su hogar. No se trata de abandonar sus obligaciones,
-            sino de recibir una oportunidad justa para recuperarse, rehabilitarse,
-            estabilizarse y proteger lo que más importa.
+            con su hipoteca o con sus atrasos contributivos a través del tiempo,
+            todo mientras mantiene su hogar. No se trata de abandonar sus
+            obligaciones, sino de recibir una oportunidad justa para
+            recuperarse, rehabilitarse, estabilizarse y proteger lo que más
+            importa.
           </p>
 
           <p>
             Si sus ingresos se han estabilizado, o si hay una forma razonable de
-            proyectar ingresos confiables hacia adelante, podemos proponer un plan de pago
-            para poner la cuenta al día mediante el proceso de Quiebras. Si no
-            es así, igual nos aseguramos de que entienda todas las opciones
-            disponibles, incluyendo medidas temporeras de alivio,
+            proyectar ingresos confiables hacia adelante, podemos proponer un
+            plan de pago para poner la cuenta al día mediante el proceso de
+            Quiebras. Si no es así, igual nos aseguramos de que entienda todas
+            las opciones disponibles, incluyendo medidas temporeras de alivio,
             consideraciones de tiempo y maneras de preservar cualquier plusvalía
             antes de la venta.
           </p>
@@ -178,74 +314,149 @@
             propiedad y su futuro.
           </p>
 
-          <hr class="my-6 border-neutral-200" />
+          <hr class="my-6" style="border: 0; border-top: 1px solid #e0d0b8" />
 
-          <h2 class="text-center text-lg font-semibold">¿Y ahora qué?</h2>
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            ¿Y ahora qué?
+          </h2>
+
           <ul class="list-disc pl-5 mt-2">
             <li>
               Detenga una venta ya pautada hoy mismo:
-              <a href="/resources/automatic-stay.html" class="underline"
-                >Cómo funciona la Paralización Automática</a
-              >.
+              <a
+                href="/resources/automatic-stay.html"
+                class="underline"
+                style="color: #3b372e"
+                onmouseover="this.style.color='#CDA45C';"
+                onmouseout="this.style.color='#3B372E';"
+              >
+                Cómo funciona la Paralización Automática
+              </a>
+              .
             </li>
+
             <li>
               Mantenga su hogar mientras se pone al día:
-              <a href="/resources/chapter-13-feasibility.html" class="underline"
-                >Viabilidad del Capítulo 13</a
-              >.
+              <a
+                href="/resources/chapter-13-feasibility.html"
+                class="underline"
+                style="color: #3b372e"
+                onmouseover="this.style.color='#CDA45C';"
+                onmouseout="this.style.color='#3B372E';"
+              >
+                Viabilidad del Capítulo 13
+              </a>
+              .
             </li>
+
             <li>
               Sepa qué esperar:
-              <a href="/resources/after-you-file.html" class="underline"
-                >Después de radicar (Procedimiento hasta el descargo y cierre del caso)</a
-              >.
+              <a
+                href="/resources/after-you-file.html"
+                class="underline"
+                style="color: #3b372e"
+                onmouseover="this.style.color='#CDA45C';"
+                onmouseout="this.style.color='#3B372E';"
+              >
+                Después de radicar
+              </a>
+              .
             </li>
           </ul>
         </article>
 
-        <!-- Bottom CTA (same layout as top) -->
+        <!-- Bottom CTA (mirrors top) -->
         <div
           class="mt-8 w-full flex flex-col md:flex-row gap-3 md:gap-4 md:justify-center md:items-center"
         >
+          <!-- Primary CTA -->
           <a
             href="/contact/"
-            class="inline-flex justify-center items-center w-full md:w-auto md:min-w-48 px-4 py-2.5 text-sm sm:text-base rounded-md border border-black bg-black text-white shadow-sm hover:-translate-y-0.5 hover:bg-neutral-900 hover:shadow-md active:translate-y-0 transition text-center"
+            class="inline-flex justify-center items-center w-full md:w-auto md:min-w-48 px-4 py-2.5 text-sm sm:text-base rounded-md text-center shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              background-color: #3b372e;
+              color: #f2e6d3;
+              border: 1px solid #3b372e;
+              text-decoration: none;
+            "
+            onmouseover="this.style.backgroundColor='#CDA45C'; this.style.color='#F2E6D3'; this.style.borderColor='#CDA45C';"
+            onmouseout="this.style.backgroundColor='#3B372E'; this.style.color='#F2E6D3'; this.style.borderColor='#3B372E';"
           >
             Consulta Inicial
           </a>
+
+          <!-- Secondary CTA (outline GOLD) -->
           <a
-            href="/resources/"
-            class="inline-flex justify-center items-center w-full md:w-auto md:min-w-48 px-4 py-2.5 text-sm sm:text-base rounded-md underline text-center"
+            href="./../resources/resources.html"
+            class="inline-flex justify-center items-center w-full md:w-auto md:min-w-48 px-4 py-2.5 text-sm sm:text-base rounded-md text-center shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              border: 1px solid #cda45c;
+              background-color: transparent;
+              text-decoration: none;
+            "
+            onmouseover="this.style.backgroundColor='#CDA45C'; this.style.color='#F2E6D3';"
+            onmouseout="this.style.backgroundColor='transparent'; this.style.color='#3B372E';"
           >
-            Ver todos los recursos
+            Más recursos
           </a>
         </div>
       </div>
     </main>
 
-    <footer class="border-t">
+    <footer
+      class="border-t"
+      style="background-color: #f2e6d3; border-color: #cda45c"
+    >
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="py-6 sm:py-8">
-          <div class="text-base font-semibold tracking-tight">
+          <!-- Firm Name -->
+          <div
+            class="text-xl font-semibold tracking-tight"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
             Crespo &amp; Crespo
           </div>
-          <p class="mt-1 text-sm opacity-80">
+
+          <!-- Licensing / Info -->
+          <p
+            class="mt-1 text-sm opacity-90 leading-relaxed"
+            style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+          >
             Socio Administrador con licencia en Florida:
-            <span class="font-medium">Alejandro Crespo</span><br />
+            <span style="font-weight: 600">Alejandro Crespo</span>
+            <br />
             Licenciados en Florida y Puerto Rico
           </p>
+
+          <!-- Language Toggle -->
           <div class="mt-3 text-sm">
             <a
               id="lang-switch-footer"
-              class="underline"
               href="../index.html"
               aria-label="Switch to English"
-              >English</a
+              class="transition-colors duration-150"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+                border-bottom: 1px solid #cda45c;
+              "
+              onmouseover="this.style.color='#CDA45C';"
+              onmouseout="this.style.color='#3B372E';"
             >
+              English
+            </a>
           </div>
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

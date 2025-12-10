@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./../style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,26 +18,76 @@
     <title>Garnishments</title>
   </head>
   <body>
-    <nav class="sticky top-0 z-50 bg-white border-b">
+    <nav
+      class="sticky top-0 z-50 border-b"
+      style="background-color: #ebd9c3; /* warm cream */ border-color: #cda45c"
+    >
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="h-16 flex items-center justify-between">
           <!-- Brand -->
-          <a href="/" class="shrink-0 text-base font-semibold tracking-tight">
+          <a
+            href="/"
+            class="shrink-0 text-2xl font-semibold tracking-tight"
+            style="
+              font-family: 'Cormorant Garamond', serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+          >
             Crespo &amp; Crespo
           </a>
 
           <!-- Desktop nav -->
           <div class="hidden md:flex items-center gap-6">
-            <a href="./../index.html" class="text-sm">Home</a>
-            <a href="/bankruptcy/" class="text-sm">Resources</a>
-            <a href="/contact/" class="text-sm"> Contact </a>
+            <a
+              href="./../index.html"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+            >
+              Home
+            </a>
+
+            <a
+              href="./../resources/resources.html"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+            >
+              Resources
+            </a>
+
+            <a
+              href="/contact/"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+            >
+              Contact
+            </a>
+
             <a
               id="lang-switch-desktop"
               href="./es/"
-              class="text-sm"
               aria-label="Cambiar a español"
-              >Español</a
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
             >
+              Español
+            </a>
           </div>
 
           <!-- Mobile hamburger -->
@@ -46,11 +101,12 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="20"
+              height="20"
               fill="currentColor"
               class="bi bi-list"
               viewBox="0 0 16 16"
+              style="color: #3b372e"
             >
               <path
                 fill-rule="evenodd"
@@ -62,41 +118,113 @@
       </div>
 
       <!-- Mobile dropdown -->
-      <div id="mobile-menu" class="md:hidden hidden border-t">
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden border-t"
+        style="border-color: #cda45c"
+      >
         <div class="px-4 py-3 space-y-2">
-          <a href="./../index.html" class="block text-sm">Home</a>
-          <a href="/bankruptcy/" class="block text-sm">Resources</a>
-          <a href="/contact/" class="block text-sm">Contact</a>
+          <a
+            href="./../index.html"
+            class="block text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+          >
+            Home
+          </a>
+
+          <a
+            href="./../resources/resources.html"
+            class="block text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+          >
+            Resources
+          </a>
+
+          <a
+            href="/contact/"
+            class="block text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+          >
+            Contact
+          </a>
+
           <a
             id="lang-switch-mobile"
             href="./es/"
-            class="block text-sm"
+            class="block text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
             aria-label="Cambiar a español"
-            >Español</a
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
           >
+            Español
+          </a>
         </div>
       </div>
     </nav>
-    <main id="content" class="py-8 sm:py-10 md:py-12">
+
+    <main
+      id="content"
+      class="py-8 sm:py-10 md:py-12"
+      style="background-color: #f2e6d3; border-top: 1px solid #cda45c"
+    >
       <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <!-- Title -->
-        <h1 class="text-center text-2xl sm:text-3xl font-semibold tracking-tight">
+        <h1
+          class="text-center text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight"
+          style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+        >
           Wage &amp; Account Garnishments
         </h1>
 
-        <!-- Lead-in CTA strip (lightweight, not a card) -->
+        <!-- Top CTA strip (primary + secondary) -->
         <div
           class="mt-4 w-full flex flex-col md:flex-row gap-3 md:gap-4 md:justify-center md:items-center"
         >
+          <!-- PRIMARY CTA -->
           <a
             href="/contact/"
-            class="inline-flex justify-center items-center w-full min-w-[12rem] sm:w-auto px-4 py-2.5 text-sm sm:text-base rounded-md border border-black bg-black text-white text-center shadow-sm hover:!shadow-md hover:-translate-y-0.5 hover:!bg-white hover:!text-black active:translate-y-0 active:shadow-sm transition-colors transition-transform duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-black"
+            class="inline-flex justify-center items-center w-full min-w-[12rem] sm:w-auto px-4 py-2.5 text-sm sm:text-base rounded-md text-center shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              background-color: #3b372e;
+              color: #f2e6d3;
+              border: 1px solid #3b372e;
+              text-decoration: none;
+            "
+            onmouseover="this.style.backgroundColor='#CDA45C'; this.style.color='#F2E6D3'; this.style.borderColor='#CDA45C';"
+            onmouseout="this.style.backgroundColor='#3B372E'; this.style.color='#F2E6D3'; this.style.borderColor='#3B372E';"
           >
             Initial Case Review
           </a>
+
+          <!-- SECONDARY CTA (gold outline) -->
           <a
             href="tel:+19045550123"
-            class="inline-flex justify-center items-center w-full md:w-auto md:min-w-48 px-4 py-2.5 text-sm sm:text-base rounded-md underline text-center"
+            class="inline-flex justify-center items-center w-full md:w-auto md:min-w-48 px-4 py-2.5 text-sm sm:text-base rounded-md text-center shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              border: 1px solid #cda45c;
+              background-color: transparent;
+              text-decoration: none;
+            "
+            onmouseover="this.style.backgroundColor='#CDA45C'; this.style.color='#F2E6D3';"
+            onmouseout="this.style.backgroundColor='transparent'; this.style.color='#3B372E';"
           >
             Or call (904) 555-0123
           </a>
@@ -105,6 +233,7 @@
         <!-- Article body -->
         <article
           class="prose prose-neutral max-w-none text-[0.95rem] sm:text-base leading-relaxed mt-6"
+          style="font-family: 'Montserrat', sans-serif; color: #3b372e"
         >
           <p>
             Some time ago, you were sued by a bank, credit card company, or
@@ -137,8 +266,14 @@
           <p>
             But here’s what most people don’t realize: a bankruptcy filing can
             stop the garnishment immediately.
-            <a href="/resources/automatic-stay.html" class="underline"
-              >The moment a petition is filed</a
+            <a
+              href="/resources/automatic-stay.html"
+              class="underline"
+              style="color: #3b372e"
+              onmouseover="this.style.color='#CDA45C';"
+              onmouseout="this.style.color='#3B372E';"
+            >
+              The moment a petition is filed </a
             >, all collection activity must cease — including wage and bank
             garnishments. Your paycheck is yours again, protected by federal
             law.
@@ -162,20 +297,36 @@
             control.
           </p>
 
-          <!-- Minimal “What to do next” (no cards) -->
-          <hr class="my-6 border-neutral-200" />
-          <h2 class="text-center text-lg font-semibold">What next?</h2>
+          <hr class="my-6" style="border: 0; border-top: 1px solid #e0d0b8" />
+
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            What next?
+          </h2>
+
           <ul class="list-disc pl-5 mt-2">
             <li>
               Read how the
-              <a href="/resources/automatic-stay.html" class="underline"
+              <a
+                href="/resources/automatic-stay.html"
+                class="underline"
+                style="color: #3b372e"
+                onmouseover="this.style.color='#CDA45C';"
+                onmouseout="this.style.color='#3B372E';"
                 >Automatic Stay</a
               >
               freezes garnishments.
             </li>
             <li>
               See
-              <a href="/resources/exemptions.html" class="underline"
+              <a
+                href="/resources/exemptions.html"
+                class="underline"
+                style="color: #3b372e"
+                onmouseover="this.style.color='#CDA45C';"
+                onmouseout="this.style.color='#3B372E';"
                 >what you keep</a
               >
               when you file.
@@ -185,55 +336,104 @@
               <a
                 href="/resources/what-bankruptcy-cant-do.html"
                 class="underline"
+                style="color: #3b372e"
+                onmouseover="this.style.color='#CDA45C';"
+                onmouseout="this.style.color='#3B372E';"
                 >what bankruptcy can’t do</a
               >.
             </li>
           </ul>
         </article>
 
-        <!-- Bottom CTA (light, mirrors hero) -->
+        <!-- Bottom CTA -->
         <div
           class="mt-8 w-full flex flex-col md:flex-row gap-3 md:gap-4 md:justify-center md:items-center"
         >
+          <!-- PRIMARY -->
           <a
             href="/contact/"
-            class="inline-flex justify-center items-center w-full min-w-[12rem] sm:w-auto px-4 py-2.5 text-sm sm:text-base rounded-md border border-black bg-black text-white text-center shadow-sm hover:!shadow-md hover:-translate-y-0.5 hover:!bg-white hover:!text-black active:translate-y-0 active:shadow-sm transition-colors transition-transform duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-black"
+            class="inline-flex justify-center items-center w-full min-w-[12rem] sm:w-auto px-4 py-2.5 text-sm sm:text-base rounded-md text-center shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              background-color: #3b372e;
+              color: #f2e6d3;
+              border: 1px solid #3b372e;
+              text-decoration: none;
+            "
+            onmouseover="this.style.backgroundColor='#CDA45C'; this.style.color='#F2E6D3'; this.style.borderColor='#CDA45C';"
+            onmouseout="this.style.backgroundColor='#3B372E'; this.style.color='#F2E6D3'; this.style.borderColor='#3B372E';"
           >
             Initial Case Review
           </a>
+
+          <!-- SECONDARY -->
           <a
-            href="/resources/"
-            class="inline-flex justify-center items-center w-full md:w-auto md:min-w-48 px-4 py-2.5 text-sm sm:text-base underline text-center"
+            href="./../resources/resources.html"
+            class="inline-flex justify-center items-center w-full md:w-auto md:min-w-48 px-4 py-2.5 text-sm sm:text-base rounded-md text-center shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              border: 1px solid #cda45c;
+              background-color: transparent;
+              text-decoration: none;
+            "
+            onmouseover="this.style.backgroundColor='#CDA45C'; this.style.color='#F2E6D3';"
+            onmouseout="this.style.backgroundColor='transparent'; this.style.color='#3B372E';"
           >
-            Explore all resources
+            More resources
           </a>
         </div>
       </div>
     </main>
 
-    <footer class="border-t">
+    <footer
+      class="border-t"
+      style="background-color: #f2e6d3; border-color: #cda45c"
+    >
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="py-6 sm:py-8">
-          <div class="text-base font-semibold tracking-tight">
+          <!-- Firm Name -->
+          <div
+            class="text-xl font-semibold tracking-tight"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
             Crespo &amp; Crespo
           </div>
-          <p class="mt-1 text-sm opacity-80">
+
+          <!-- Licensing / Info -->
+          <p
+            class="mt-1 text-sm opacity-90 leading-relaxed"
+            style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+          >
             Managing Partner licensed in Florida:
-            <span class="font-medium">Alejandro Crespo</span><br />
+            <span style="font-weight: 600">Alejandro Crespo</span>
+            <br />
             Licensed in Florida &amp; Puerto Rico
           </p>
+
+          <!-- Language Toggle -->
           <div class="mt-3 text-sm">
             <a
               id="lang-switch-footer"
-              class="underline"
               href="./es/"
               aria-label="Change language"
-              >Español</a
+              class="transition-colors duration-150"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+                border-bottom: 1px solid #cda45c;
+              "
+              onmouseover="this.style.color='#CDA45C';"
+              onmouseout="this.style.color='#3B372E';"
             >
+              Español
+            </a>
           </div>
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
