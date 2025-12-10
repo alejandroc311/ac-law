@@ -82,7 +82,7 @@
         </div>
       </div>
     </nav>
-    <main
+ <main
   id="content"
   class="py-10 sm:py-12 md:py-14"
   style="background-color: #f2e6d3; border-top: 1px solid #cda45c"
@@ -97,7 +97,7 @@
       Bankruptcy Resources
     </h1>
 
-    <!-- Subtle intro (smaller + lighter) -->
+    <!-- Subtle intro -->
     <p
       class="mt-2 text-xs sm:text-sm opacity-75 text-center max-w-sm mx-auto"
       style="font-family: 'Montserrat', sans-serif; color: #3b372e"
@@ -106,214 +106,227 @@
     </p>
 
     <!-- Resources list -->
-    <ul
-      class="mt-8 space-y-5 list-none p-0"
-      style="font-family: 'Montserrat', sans-serif;"
-    >
+    <ul class="mt-8 space-y-6 list-none p-0">
 
+      <!-- ITEM TEMPLATE -->
+      <!-- Each item now begins with a soft golden dot for scannability -->
+      
       <!-- ITEM 1 -->
-      <li>
-        <h2
-          class="text-base sm:text-lg font-semibold"
-          style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
-        >
-          Bankruptcy Exemptions
-        </h2>
+      <li class="flex flex-col gap-1">
+        <div class="flex items-start gap-2">
+          <span style="color:#cda45c; font-size:1.1rem; line-height:1;">•</span>
+          <h2
+            class="text-base sm:text-lg font-semibold leading-snug"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            Bankruptcy Exemptions
+          </h2>
+        </div>
+
         <p
-          class="mt-1 text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 items-baseline"
-          style="color: #3b372e"
+          class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 items-baseline pl-5"
+          style="font-family:'Montserrat', sans-serif; color:#3b372e"
         >
           <span>See what you keep.</span>
           <a
             href="/resources/exemptions.html"
             class="underline"
-            style="color: #3b372e"
+            style="color:#3b372e"
             onmouseover="this.style.color='#CDA45C';"
             onmouseout="this.style.color='#3B372E';"
-          >
-            See more
-          </a>
+          >See more</a>
         </p>
       </li>
 
       <!-- ITEM 2 -->
-      <li>
-        <h2
-          class="text-base sm:text-lg font-semibold"
-          style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
-        >
-          Automatic Stay
-        </h2>
+      <li class="flex flex-col gap-1">
+        <div class="flex items-start gap-2">
+          <span style="color:#cda45c; font-size:1.1rem;">•</span>
+          <h2
+            class="text-base sm:text-lg font-semibold leading-snug"
+            style="font-family:'Cormorant Garamond', serif; color:#3b372e"
+          >
+            Automatic Stay
+          </h2>
+        </div>
+
         <p
-          class="mt-1 text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 items-baseline"
-          style="color: #3b372e"
+          class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
+          style="font-family:'Montserrat', sans-serif; color:#3b372e"
         >
           <span>How collections are frozen.</span>
           <a
             href="/resources/automatic-stay.html"
             class="underline"
-            style="color: #3b372e"
+            style="color:#3b372e"
             onmouseover="this.style.color='#CDA45C';"
             onmouseout="this.style.color='#3B372E';"
-          >
-            See more
-          </a>
+          >See more</a>
         </p>
       </li>
 
       <!-- ITEM 3 -->
-      <li>
-        <h2
-          class="text-base sm:text-lg font-semibold"
-          style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
-        >
-          Chapter 13 Feasibility
-        </h2>
+      <li class="flex flex-col gap-1">
+        <div class="flex items-start gap-2">
+          <span style="color:#cda45c; font-size:1.1rem;">•</span>
+          <h2
+            class="text-base sm:text-lg font-semibold leading-snug"
+            style="font-family:'Cormorant Garamond', serif; color:#3b372e"
+          >
+            Chapter 13 Feasibility
+          </h2>
+        </div>
+
         <p
-          class="mt-1 text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 items-baseline"
-          style="color: #3b372e"
+          class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
+          style="font-family:'Montserrat', sans-serif; color:#3b372e"
         >
-          <span>Using a plan to catch up.</span>
+          <span>Catch up on mortgage arrears</span>
           <a
             href="/resources/chapter-13-feasibility.html"
             class="underline"
-            style="color: #3b372e"
+            style="color:#3b372e"
             onmouseover="this.style.color='#CDA45C';"
             onmouseout="this.style.color='#3B372E';"
-          >
-            See more
-          </a>
+          >See more</a>
         </p>
       </li>
 
       <!-- ITEM 4 -->
-      <li>
-        <h2
-          class="text-base sm:text-lg font-semibold"
-          style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
-        >
-          After You File
-        </h2>
+      <li class="flex flex-col gap-1">
+        <div class="flex items-start gap-2">
+          <span style="color:#cda45c; font-size:1.1rem;">•</span>
+          <h2
+            class="text-base sm:text-lg font-semibold leading-snug"
+            style="font-family:'Cormorant Garamond', serif; color:#3b372e"
+          >
+            After You File
+          </h2>
+        </div>
         <p
-          class="mt-1 text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 items-baseline"
-          style="color: #3b372e"
+          class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
+          style="font-family:'Montserrat', sans-serif; color:#3b372e"
         >
-          <span>Timeline from filing to discharge.</span>
+          <span>Timeline to discharge.</span>
           <a
             href="/resources/after-you-file.html"
             class="underline"
-            style="color: #3b372e"
+            style="color:#3b372e"
             onmouseover="this.style.color='#CDA45C';"
             onmouseout="this.style.color='#3B372E';"
-          >
-            See more
-          </a>
+          >See more</a>
         </p>
       </li>
 
       <!-- ITEM 5 -->
-      <li>
-        <h2
-          class="text-base sm:text-lg font-semibold"
-          style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
-        >
-          What Bankruptcy Can’t Do
-        </h2>
+      <li class="flex flex-col gap-1">
+        <div class="flex items-start gap-2">
+          <span style="color:#cda45c; font-size:1.1rem;">•</span>
+          <h2
+            class="text-base sm:text-lg font-semibold leading-snug"
+            style="font-family:'Cormorant Garamond', serif; color:#3b372e"
+          >
+            What Bankruptcy Can’t Do
+          </h2>
+        </div>
         <p
-          class="mt-1 text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 items-baseline"
-          style="color: #3b372e"
+          class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
+          style="font-family:'Montserrat', sans-serif; color:#3b372e"
         >
-          <span>Know the limits and exceptions.</span>
+          <span>Know the limits.</span>
           <a
             href="/resources/what-bankruptcy-cant-do.html"
             class="underline"
-            style="color: #3b372e"
+            style="color:#3b372e"
             onmouseover="this.style.color='#CDA45C';"
             onmouseout="this.style.color='#3B372E';"
-          >
-            See more
-          </a>
+          >See more</a>
         </p>
       </li>
 
       <!-- ITEM 6 -->
-      <li>
-        <h2
-          class="text-base sm:text-lg font-semibold"
-          style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
-        >
-          Means Test &amp; Eligibility
-        </h2>
+      <li class="flex flex-col gap-1">
+        <div class="flex items-start gap-2">
+          <span style="color:#cda45c; font-size:1.1rem;">•</span>
+          <h2
+            class="text-base sm:text-lg font-semibold leading-snug"
+            style="font-family:'Cormorant Garamond', serif; color:#3b372e"
+          >
+            Means Test &amp; Eligibility
+          </h2>
+        </div>
         <p
-          class="mt-1 text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 items-baseline"
-          style="color: #3b372e"
+          class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
+          style="font-family:'Montserrat', sans-serif; color:#3b372e"
         >
-          <span>Chapter 7 vs. Chapter 13 basics.</span>
+          <span>Ch. 7 vs. 13 basics.</span>
           <a
             href="/resources/means-test.html"
             class="underline"
-            style="color: #3b372e"
+            style="color:#3b372e"
             onmouseover="this.style.color='#CDA45C';"
             onmouseout="this.style.color='#3B372E';"
-          >
-            See more
-          </a>
+          >See more</a>
         </p>
       </li>
 
       <!-- ITEM 7 -->
-      <li>
-        <h2
-          class="text-base sm:text-lg font-semibold"
-          style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
-        >
-          Wage &amp; Account Garnishments
-        </h2>
+      <li class="flex flex-col gap-1">
+        <div class="flex items-start gap-2">
+          <span style="color:#cda45c; font-size:1.1rem;">•</span>
+          <h2
+            class="text-base sm:text-lg font-semibold leading-snug"
+            style="font-family:'Cormorant Garamond', serif; color:#3b372e"
+          >
+            Wage &amp; Account Garnishments
+          </h2>
+        </div>
         <p
-          class="mt-1 text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 items-baseline"
-          style="color: #3b372e"
+          class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
+          style="font-family:'Montserrat', sans-serif; color:#3b372e"
         >
-          <span>Stopping wage and bank seizures.</span>
+          <span>Stopping seizures.</span>
           <a
             href="/resources/garnishments.html"
             class="underline"
-            style="color: #3b372e"
+            style="color:#3b372e"
             onmouseover="this.style.color='#CDA45C';"
             onmouseout="this.style.color='#3B372E';"
-          >
-            See more
-          </a>
+          >See more</a>
         </p>
       </li>
 
       <!-- ITEM 8 -->
-      <li>
-        <h2
-          class="text-base sm:text-lg font-semibold"
-          style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
-        >
-          Foreclosure &amp; Emergency Filings
-        </h2>
+      <li class="flex flex-col gap-1">
+        <div class="flex items-start gap-2">
+          <span style="color:#cda45c; font-size:1.1rem;">•</span>
+          <h2
+            class="text-base sm:text-lg font-semibold leading-snug"
+            style="font-family:'Cormorant Garamond', serif; color:#3b372e"
+          >
+            Foreclosure &amp; Emergency Filings
+          </h2>
+        </div>
         <p
-          class="mt-1 text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 items-baseline"
-          style="color: #3b372e"
+          class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
+          style="font-family:'Montserrat', sans-serif; color:#3b372e"
         >
-          <span>Halting a sale before the auction.</span>
+          <span>Stopping a sale.</span>
           <a
             href="/resources/foreclosure.html"
             class="underline"
-            style="color: #3b372e"
+            style="color:#3b372e"
             onmouseover="this.style.color='#CDA45C';"
             onmouseout="this.style.color='#3B372E';"
-          >
-            See more
-          </a>
+          >See more</a>
         </p>
       </li>
 
     </ul>
+
   </div>
 </main>
+
 
 
     <footer class="border-t">
