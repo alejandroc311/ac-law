@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link href="./../style.css" rel="stylesheet"/>
+    <link href="./../style.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
       rel="stylesheet"
@@ -18,26 +18,79 @@
     <title>Resources</title>
   </head>
   <body>
-    <nav class="sticky top-0 z-50 bg-white border-b">
+    <nav
+      class="sticky top-0 z-50 border-b"
+      style="
+        background-color: #ebd9c3; /* slightly darker cream than #f2e6d3 */
+        border-color: #cda45c;
+      "
+    >
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="h-16 flex items-center justify-between">
           <!-- Brand -->
-          <a href="/" class="shrink-0 text-base font-semibold tracking-tight">
+          <a
+            href="/"
+            class="shrink-0 text-2xl font-semibold tracking-tight"
+            style="
+              font-family: 'Cormorant Garamond', serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+          >
             Crespo &amp; Crespo
           </a>
 
           <!-- Desktop nav -->
           <div class="hidden md:flex items-center gap-6">
-            <a href="/" class="text-sm">Home</a>
-            <a href="/bankruptcy/" class="text-sm">Resources</a>
-            <a href="/contact/" class="text-sm"> Contact </a>
+            <a
+              href="./../index.html"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+            >
+              Home
+            </a>
+
+            <a
+              href="./resources.html"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+            >
+              Resources
+            </a>
+
+            <a
+              href="/contact/"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+            >
+              Contact
+            </a>
+
             <a
               id="lang-switch-desktop"
               href="./es/"
-              class="text-sm"
               aria-label="Cambiar a español"
-              >Español</a
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
             >
+              Español
+            </a>
           </div>
 
           <!-- Mobile hamburger -->
@@ -51,11 +104,12 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="20"
+              height="20"
               fill="currentColor"
               class="bi bi-list"
               viewBox="0 0 16 16"
+              style="color: #3b372e"
             >
               <path
                 fill-rule="evenodd"
@@ -67,321 +121,465 @@
       </div>
 
       <!-- Mobile dropdown -->
-      <div id="mobile-menu" class="md:hidden hidden border-t">
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden border-t"
+        style="border-color: #cda45c"
+      >
         <div class="px-4 py-3 space-y-2">
-          <a href="/" class="block text-sm">Home</a>
-          <a href="/bankruptcy/" class="block text-sm">Resources</a>
-          <a href="/contact/" class="block text-sm">Contact</a>
+          <a
+            href="./../index.html"
+            class="block text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+          >
+            Home
+          </a>
+
+          <a
+            href="./resources.html"
+            class="block text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+          >
+            Resources
+          </a>
+
+          <a
+            href="/contact/"
+            class="block text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+          >
+            Contact
+          </a>
+
           <a
             id="lang-switch-mobile"
             href="./es/"
-            class="block text-sm"
+            class="block text-sm transition-all duration-150 ease-out hover:-translate-y-0.5 hover:text-[#CDA45C]"
             aria-label="Cambiar a español"
-            >Español</a
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
           >
+            Español
+          </a>
         </div>
       </div>
     </nav>
- <main
-  id="content"
-  class="py-10 sm:py-12 md:py-14"
-  style="background-color: #f2e6d3; border-top: 1px solid #cda45c"
->
-  <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
 
-    <!-- Page Title -->
-    <h1
-      class="text-center text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight"
-      style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+    <main
+      id="content"
+      class="py-10 sm:py-12 md:py-14"
+      style="background-color: #f2e6d3; border-top: 1px solid #cda45c"
     >
-      Bankruptcy Resources
-    </h1>
+      <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <!-- Page Title -->
+        <h1
+          class="text-center text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight"
+          style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+        >
+          Bankruptcy Resources
+        </h1>
 
-    <!-- Subtle intro -->
-    <p
-      class="mt-2 text-sm sm:text-base opacity-75 text-center max-w-sm mx-auto"
-      style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+        <!-- Subtle intro -->
+        <p
+          class="mt-2 text-sm sm:text-base opacity-75 text-center max-w-sm mx-auto"
+          style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+        >
+          Browse short guides on key bankruptcy topics.
+        </p>
+
+        <!-- Resources list -->
+        <ul class="mt-8 space-y-2 list-none p-0">
+          <!-- ITEM TEMPLATE -->
+          <!-- bullet + h4 + blurb + “see more →” with animation -->
+
+          <!-- ITEM 1 -->
+          <li class="flex flex-col gap-1">
+            <div class="flex items-start gap-2">
+              <span style="color: #cda45c; font-size: 1.1rem; line-height: 1"
+                >•</span
+              >
+              <h4
+                class="text-base sm:text-lg font-semibold leading-snug"
+                style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+              >
+                Bankruptcy Exemptions
+              </h4>
+            </div>
+
+            <p
+              class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 items-baseline pl-5"
+              style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+            >
+              <span>See what you keep.</span>
+
+              <a
+                href="/resources/exemptions.html"
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  color: #3b372e;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 4px;
+                  text-decoration: none;
+                  transition: color 0.2s, transform 0.2s;
+                "
+                onmouseover="this.style.color='#CDA45C'; this.querySelector('span').style.transform='translateX(3px)'"
+                onmouseout="this.style.color='#3B372E'; this.querySelector('span').style.transform='translateX(0)'"
+              >
+                See more
+                <span style="display: inline-block; transition: transform 0.2s"
+                  >→</span
+                >
+              </a>
+            </p>
+          </li>
+
+          <!-- ITEM 2 -->
+          <li class="flex flex-col gap-1">
+            <div class="flex items-start gap-2">
+              <span style="color: #cda45c; font-size: 1.1rem">•</span>
+              <h4
+                class="text-base sm:text-lg font-semibold leading-snug"
+                style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+              >
+                Automatic Stay
+              </h4>
+            </div>
+
+            <p
+              class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
+              style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+            >
+              <span>How foreclosures are stopped immediately</span>
+
+              <a
+                href="/resources/automatic-stay.html"
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  color: #3b372e;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 4px;
+                  text-decoration: none;
+                  transition: color 0.2s, transform 0.2s;
+                "
+                onmouseover="this.style.color='#CDA45C'; this.querySelector('span').style.transform='translateX(3px)'"
+                onmouseout="this.style.color='#3B372E'; this.querySelector('span').style.transform='translateX(0)'"
+              >
+                See more
+                <span style="display: inline-block; transition: transform 0.2s"
+                  >→</span
+                >
+              </a>
+            </p>
+          </li>
+
+          <!-- ITEM 3 -->
+          <li class="flex flex-col gap-1">
+            <div class="flex items-start gap-2">
+              <span style="color: #cda45c; font-size: 1.1rem">•</span>
+              <h4
+                class="text-base sm:text-lg font-semibold leading-snug"
+                style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+              >
+                Chapter 13 Feasibility
+              </h4>
+            </div>
+
+            <p
+              class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
+              style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+            >
+              <span>Using a plan to catch up.</span>
+
+              <a
+                href="/resources/chapter-13-feasibility.html"
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  color: #3b372e;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 4px;
+                  text-decoration: none;
+                  transition: color 0.2s, transform 0.2s;
+                "
+                onmouseover="this.style.color='#CDA45C'; this.querySelector('span').style.transform='translateX(3px)'"
+                onmouseout="this.style.color='#3B372E'; this.querySelector('span').style.transform='translateX(0)'"
+              >
+                See more
+                <span style="display: inline-block; transition: transform 0.2s"
+                  >→</span
+                >
+              </a>
+            </p>
+          </li>
+
+          <!-- ITEM 4 -->
+          <li class="flex flex-col gap-1">
+            <div class="flex items-start gap-2">
+              <span style="color: #cda45c; font-size: 1.1rem">•</span>
+              <h4
+                class="text-base sm:text-lg font-semibold leading-snug"
+                style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+              >
+                After You File
+              </h4>
+            </div>
+
+            <p
+              class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
+              style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+            >
+              <span>Timeline to discharge.</span>
+
+              <a
+                href="/resources/after-you-file.html"
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  color: #3b372e;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 4px;
+                  text-decoration: none;
+                  transition: color 0.2s, transform 0.2s;
+                "
+                onmouseover="this.style.color='#CDA45C'; this.querySelector('span').style.transform='translateX(3px)'"
+                onmouseout="this.style.color='#3B372E'; this.querySelector('span').style.transform='translateX(0)'"
+              >
+                See more
+                <span style="display: inline-block; transition: transform 0.2s"
+                  >→</span
+                >
+              </a>
+            </p>
+          </li>
+
+          <!-- ITEM 5 -->
+          <li class="flex flex-col gap-1">
+            <div class="flex items-start gap-2">
+              <span style="color: #cda45c; font-size: 1.1rem">•</span>
+              <h4
+                class="text-base sm:text-lg font-semibold leading-snug"
+                style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+              >
+                What Bankruptcy Can’t Do
+              </h4>
+            </div>
+
+            <p
+              class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
+              style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+            >
+              <span>Know the limits.</span>
+
+              <a
+                href="/resources/what-bankruptcy-cant-do.html"
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  color: #3b372e;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 4px;
+                  text-decoration: none;
+                  transition: color 0.2s, transform 0.2s;
+                "
+                onmouseover="this.style.color='#CDA45C'; this.querySelector('span').style.transform='translateX(3px)'"
+                onmouseout="this.style.color='#3B372E'; this.querySelector('span').style.transform='translateX(0)'"
+              >
+                See more
+                <span style="display: inline-block; transition: transform 0.2s"
+                  >→</span
+                >
+              </a>
+            </p>
+          </li>
+
+          <!-- ITEM 6 -->
+          <li class="flex flex-col gap-1">
+            <div class="flex items-start gap-2">
+              <span style="color: #cda45c; font-size: 1.1rem">•</span>
+              <h4
+                class="text-base sm:text-lg font-semibold leading-snug"
+                style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+              >
+                Means Test &amp; Eligibility
+              </h4>
+            </div>
+
+            <p
+              class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
+              style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+            >
+              <span>Ch. 7 vs. 13 basics.</span>
+
+              <a
+                href="/resources/means-test.html"
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  color: #3b372e;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 4px;
+                  text-decoration: none;
+                  transition: color 0.2s, transform 0.2s;
+                "
+                onmouseover="this.style.color='#CDA45C'; this.querySelector('span').style.transform='translateX(3px)'"
+                onmouseout="this.style.color='#3B372E'; this.querySelector('span').style.transform='translateX(0)'"
+              >
+                See more
+                <span style="display: inline-block; transition: transform 0.2s"
+                  >→</span
+                >
+              </a>
+            </p>
+          </li>
+
+          <!-- ITEM 7 -->
+          <li class="flex flex-col gap-1">
+            <div class="flex items-start gap-2">
+              <span style="color: #cda45c; font-size: 1.1rem">•</span>
+              <h4
+                class="text-base sm:text-lg font-semibold leading-snug"
+                style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+              >
+                Wage &amp; Account Garnishments
+              </h4>
+            </div>
+
+            <p
+              class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
+              style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+            >
+              <span>Stopping seizures.</span>
+
+              <a
+                href="/resources/garnishments.html"
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  color: #3b372e;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 4px;
+                  text-decoration: none;
+                  transition: color 0.2s, transform 0.2s;
+                "
+                onmouseover="this.style.color='#CDA45C'; this.querySelector('span').style.transform='translateX(3px)'"
+                onmouseout="this.style.color='#3B372E'; this.querySelector('span').style.transform='translateX(0)'"
+              >
+                See more
+                <span style="display: inline-block; transition: transform 0.2s"
+                  >→</span
+                >
+              </a>
+            </p>
+          </li>
+
+          <!-- ITEM 8 -->
+          <li class="flex flex-col gap-1">
+            <div class="flex items-start gap-2">
+              <span style="color: #cda45c; font-size: 1.1rem">•</span>
+              <h4
+                class="text-base sm:text-lg font-semibold leading-snug"
+                style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+              >
+                Foreclosure &amp; Emergency Filings
+              </h4>
+            </div>
+
+            <p
+              class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
+              style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+            >
+              <span>Stopping a sale.</span>
+
+              <a
+                href="/resources/foreclosure.html"
+                style="
+                  font-family: 'Montserrat', sans-serif;
+                  color: #3b372e;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 4px;
+                  text-decoration: none;
+                  transition: color 0.2s, transform 0.2s;
+                "
+                onmouseover="this.style.color='#CDA45C'; this.querySelector('span').style.transform='translateX(3px)'"
+                onmouseout="this.style.color='#3B372E'; this.querySelector('span').style.transform='translateX(0)'"
+              >
+                See more
+                <span style="display: inline-block; transition: transform 0.2s"
+                  >→</span
+                >
+              </a>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer
+      class="border-t"
+      style="background-color: #f2e6d3; border-color: #cda45c"
     >
-      Browse short guides on key bankruptcy topics.
-    </p>
-
-    <!-- Resources list -->
-    <ul class="mt-8 space-y-2 list-none p-0">
-
-      <!-- ITEM TEMPLATE -->
-      <!-- bullet + h4 + blurb + “see more →” with animation -->
-
-      <!-- ITEM 1 -->
-      <li class="flex flex-col gap-1">
-        <div class="flex items-start gap-2">
-          <span style="color:#cda45c; font-size:1.1rem; line-height:1;">•</span>
-          <h4
-            class="text-base sm:text-lg font-semibold leading-snug"
-            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
-          >
-            Bankruptcy Exemptions
-          </h4>
-        </div>
-
-        <p
-          class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 items-baseline pl-5"
-          style="font-family:'Montserrat', sans-serif; color:#3b372e"
-        >
-          <span>See what you keep.</span>
-
-          <a
-            href="/resources/exemptions.html"
-            style="font-family:'Montserrat', sans-serif; color:#3b372e; display:inline-flex; align-items:center; gap:4px; text-decoration:none; transition:color 0.2s, transform 0.2s;"
-            onmouseover="this.style.color='#CDA45C'; this.querySelector('span').style.transform='translateX(3px)'"
-            onmouseout="this.style.color='#3B372E'; this.querySelector('span').style.transform='translateX(0)'"
-          >
-            See more
-            <span style="display:inline-block; transition:transform 0.2s;">→</span>
-          </a>
-        </p>
-      </li>
-
-      <!-- ITEM 2 -->
-      <li class="flex flex-col gap-1">
-        <div class="flex items-start gap-2">
-          <span style="color:#cda45c; font-size:1.1rem;">•</span>
-          <h4
-            class="text-base sm:text-lg font-semibold leading-snug"
-            style="font-family:'Cormorant Garamond', serif; color:#3b372e"
-          >
-            Automatic Stay
-          </h4>
-        </div>
-
-        <p
-          class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
-          style="font-family:'Montserrat', sans-serif; color:#3b372e"
-        >
-          <span>How collections are frozen.</span>
-
-          <a
-            href="/resources/automatic-stay.html"
-            style="font-family:'Montserrat', sans-serif; color:#3b372e; display:inline-flex; align-items:center; gap:4px; text-decoration:none; transition:color 0.2s, transform 0.2s;"
-            onmouseover="this.style.color='#CDA45C'; this.querySelector('span').style.transform='translateX(3px)'"
-            onmouseout="this.style.color='#3B372E'; this.querySelector('span').style.transform='translateX(0)'"
-          >
-            See more
-            <span style="display:inline-block; transition:transform 0.2s;">→</span>
-          </a>
-        </p>
-      </li>
-
-      <!-- ITEM 3 -->
-      <li class="flex flex-col gap-1">
-        <div class="flex items-start gap-2">
-          <span style="color:#cda45c; font-size:1.1rem;">•</span>
-          <h4
-            class="text-base sm:text-lg font-semibold leading-snug"
-            style="font-family:'Cormorant Garamond', serif; color:#3b372e"
-          >
-            Chapter 13 Feasibility
-          </h4>
-        </div>
-
-        <p
-          class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
-          style="font-family:'Montserrat', sans-serif; color:#3b372e"
-        >
-          <span>Using a plan to catch up.</span>
-
-          <a
-            href="/resources/chapter-13-feasibility.html"
-            style="font-family:'Montserrat', sans-serif; color:#3b372e; display:inline-flex; align-items:center; gap:4px; text-decoration:none; transition:color 0.2s, transform 0.2s;"
-            onmouseover="this.style.color='#CDA45C'; this.querySelector('span').style.transform='translateX(3px)'"
-            onmouseout="this.style.color='#3B372E'; this.querySelector('span').style.transform='translateX(0)'"
-          >
-            See more
-            <span style="display:inline-block; transition:transform 0.2s;">→</span>
-          </a>
-        </p>
-      </li>
-
-      <!-- ITEM 4 -->
-      <li class="flex flex-col gap-1">
-        <div class="flex items-start gap-2">
-          <span style="color:#cda45c; font-size:1.1rem;">•</span>
-          <h4
-            class="text-base sm:text-lg font-semibold leading-snug"
-            style="font-family:'Cormorant Garamond', serif; color:#3b372e"
-          >
-            After You File
-          </h4>
-        </div>
-
-        <p
-          class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
-          style="font-family:'Montserrat', sans-serif; color:#3b372e"
-        >
-          <span>Timeline to discharge.</span>
-
-          <a
-            href="/resources/after-you-file.html"
-            style="font-family:'Montserrat', sans-serif; color:#3b372e; display:inline-flex; align-items:center; gap:4px; text-decoration:none; transition:color 0.2s, transform 0.2s;"
-            onmouseover="this.style.color='#CDA45C'; this.querySelector('span').style.transform='translateX(3px)'"
-            onmouseout="this.style.color='#3B372E'; this.querySelector('span').style.transform='translateX(0)'"
-          >
-            See more
-            <span style="display:inline-block; transition:transform 0.2s;">→</span>
-          </a>
-        </p>
-      </li>
-
-      <!-- ITEM 5 -->
-      <li class="flex flex-col gap-1">
-        <div class="flex items-start gap-2">
-          <span style="color:#cda45c; font-size:1.1rem;">•</span>
-          <h4
-            class="text-base sm:text-lg font-semibold leading-snug"
-            style="font-family:'Cormorant Garamond', serif; color:#3b372e"
-          >
-            What Bankruptcy Can’t Do
-          </h4>
-        </div>
-
-        <p
-          class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
-          style="font-family:'Montserrat', sans-serif; color:#3b372e"
-        >
-          <span>Know the limits.</span>
-
-          <a
-            href="/resources/what-bankruptcy-cant-do.html"
-            style="font-family:'Montserrat', sans-serif; color:#3b372e; display:inline-flex; align-items:center; gap:4px; text-decoration:none; transition:color 0.2s, transform 0.2s;"
-            onmouseover="this.style.color='#CDA45C'; this.querySelector('span').style.transform='translateX(3px)'"
-            onmouseout="this.style.color='#3B372E'; this.querySelector('span').style.transform='translateX(0)'"
-          >
-            See more
-            <span style="display:inline-block; transition:transform 0.2s;">→</span>
-          </a>
-        </p>
-      </li>
-
-      <!-- ITEM 6 -->
-      <li class="flex flex-col gap-1">
-        <div class="flex items-start gap-2">
-          <span style="color:#cda45c; font-size:1.1rem;">•</span>
-          <h4
-            class="text-base sm:text-lg font-semibold leading-snug"
-            style="font-family:'Cormorant Garamond', serif; color:#3b372e"
-          >
-            Means Test &amp; Eligibility
-          </h4>
-        </div>
-
-        <p
-          class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
-          style="font-family:'Montserrat', sans-serif; color:#3b372e"
-        >
-          <span>Ch. 7 vs. 13 basics.</span>
-
-          <a
-            href="/resources/means-test.html"
-            style="font-family:'Montserrat', sans-serif; color:#3b372e; display:inline-flex; align-items:center; gap:4px; text-decoration:none; transition:color 0.2s, transform 0.2s;"
-            onmouseover="this.style.color='#CDA45C'; this.querySelector('span').style.transform='translateX(3px)'"
-            onmouseout="this.style.color='#3B372E'; this.querySelector('span').style.transform='translateX(0)'"
-          >
-            See more
-            <span style="display:inline-block; transition:transform 0.2s;">→</span>
-          </a>
-        </p>
-      </li>
-
-      <!-- ITEM 7 -->
-      <li class="flex flex-col gap-1">
-        <div class="flex items-start gap-2">
-          <span style="color:#cda45c; font-size:1.1rem;">•</span>
-          <h4
-            class="text-base sm:text-lg font-semibold leading-snug"
-            style="font-family:'Cormorant Garamond', serif; color:#3b372e"
-          >
-            Wage &amp; Account Garnishments
-          </h4>
-        </div>
-
-        <p
-          class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
-          style="font-family:'Montserrat', sans-serif; color:#3b372e"
-        >
-          <span>Stopping seizures.</span>
-
-          <a
-            href="/resources/garnishments.html"
-            style="font-family:'Montserrat', sans-serif; color:#3b372e; display:inline-flex; align-items:center; gap:4px; text-decoration:none; transition:color 0.2s, transform 0.2s;"
-            onmouseover="this.style.color='#CDA45C'; this.querySelector('span').style.transform='translateX(3px)'"
-            onmouseout="this.style.color='#3B372E'; this.querySelector('span').style.transform='translateX(0)'"
-          >
-            See more
-            <span style="display:inline-block; transition:transform 0.2s;">→</span>
-          </a>
-        </p>
-      </li>
-
-      <!-- ITEM 8 -->
-      <li class="flex flex-col gap-1">
-        <div class="flex items-start gap-2">
-          <span style="color:#cda45c; font-size:1.1rem;">•</span>
-          <h4
-            class="text-base sm:text-lg font-semibold leading-snug"
-            style="font-family:'Cormorant Garamond', serif; color:#3b372e"
-          >
-            Foreclosure &amp; Emergency Filings
-          </h4>
-        </div>
-
-        <p
-          class="text-xs sm:text-sm opacity-85 flex flex-wrap gap-1 pl-5"
-          style="font-family:'Montserrat', sans-serif; color:#3b372e"
-        >
-          <span>Stopping a sale.</span>
-
-          <a
-            href="/resources/foreclosure.html"
-            style="font-family:'Montserrat', sans-serif; color:#3b372e; display:inline-flex; align-items:center; gap:4px; text-decoration:none; transition:color 0.2s, transform 0.2s;"
-            onmouseover="this.style.color='#CDA45C'; this.querySelector('span').style.transform='translateX(3px)'"
-            onmouseout="this.style.color='#3B372E'; this.querySelector('span').style.transform='translateX(0)'"
-          >
-            See more
-            <span style="display:inline-block; transition:transform 0.2s;">→</span>
-          </a>
-        </p>
-      </li>
-
-    </ul>
-
-  </div>
-</main>
-
-
-
-
-    <footer class="border-t">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="py-6 sm:py-8">
-          <div class="text-base font-semibold tracking-tight">
+          <!-- Firm Name -->
+          <div
+            class="text-xl font-semibold tracking-tight"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
             Crespo &amp; Crespo
           </div>
-          <p class="mt-1 text-sm opacity-80">
+
+          <!-- Licensing Information -->
+          <p
+            class="mt-1 text-sm opacity-90 leading-relaxed"
+            style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+          >
             Managing Partner licensed in Florida:
-            <span class="font-medium">Alejandro Crespo</span><br />
+            <span style="font-weight: 600">Alejandro Crespo</span>
+            <br />
             Licensed in Florida &amp; Puerto Rico
           </p>
+
+          <!-- Language Switch -->
           <div class="mt-3 text-sm">
             <a
               id="lang-switch-footer"
-              class="underline"
               href="./es/"
               aria-label="Change language"
-              >Español</a
+              class="transition-colors duration-150"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+                border-bottom: 1px solid #cda45c;
+              "
+              onmouseover="this.style.color='#CDA45C';"
+              onmouseout="this.style.color='#3B372E';"
             >
+              Español
+            </a>
           </div>
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
