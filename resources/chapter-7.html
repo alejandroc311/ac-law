@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./../style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Chapter 7</title>
+  </head>
+  <body>
+    <nav
+      class="sticky top-0 z-50 border-b"
+      style="background-color: #ebd9c3; border-color: #cda45c"
+    >
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="h-16 flex items-center justify-between">
+          <!-- Brand -->
+          <a
+            href="./../index.html"
+            class="shrink-0 text-2xl font-semibold tracking-tight"
+            style="
+              font-family: 'Cormorant Garamond', serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+          >
+            Crespo &amp; Crespo
+          </a>
+
+          <!-- Desktop nav -->
+          <div class="hidden md:flex items-center gap-6">
+            <a
+              href="./../index.html"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+              onmouseover="this.style.color='#CDA45C';"
+              onmouseout="this.style.color='#3B372E';"
+            >
+              Home
+            </a>
+
+            <a
+              href="./resources.html"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+              onmouseover="this.style.color='#CDA45C';"
+              onmouseout="this.style.color='#3B372E';"
+            >
+              Resources
+            </a>
+
+            <a
+              href="/contact/"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+              onmouseover="this.style.color='#CDA45C';"
+              onmouseout="this.style.color='#3B372E';"
+            >
+              Contact
+            </a>
+
+            <a
+              id="lang-switch-desktop"
+              href="./es/"
+              aria-label="Cambiar a español"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+              onmouseover="this.style.color='#CDA45C';"
+              onmouseout="this.style.color='#3B372E';"
+            >
+              Español
+            </a>
+          </div>
+
+          <!-- Mobile hamburger -->
+          <button
+            id="nav-toggle"
+            class="md:hidden inline-flex items-center justify-center rounded-md p-2"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            aria-label="Toggle menu"
+            type="button"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+              style="color: #3b372e"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile dropdown -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden border-t"
+        style="border-color: #cda45c"
+      >
+        <div class="px-4 py-3 space-y-2">
+          <a
+            href="./../index.html"
+            class="block text-sm transition-all duration-150 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+            onmouseover="this.style.color='#CDA45C';"
+            onmouseout="this.style.color='#3B372E';"
+          >
+            Home
+          </a>
+
+          <a
+            href="./resources.html"
+            class="block text-sm transition-all duration-150 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+            onmouseover="this.style.color='#CDA45C';"
+            onmouseout="this.style.color='#3B372E';"
+          >
+            Resources
+          </a>
+
+          <a
+            href="/contact/"
+            class="block text-sm transition-all duration-150 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+            onmouseover="this.style.color='#CDA45C';"
+            onmouseout="this.style.color='#3B372E';"
+          >
+            Contact
+          </a>
+
+          <a
+            id="lang-switch-mobile"
+            href="./es/"
+            aria-label="Cambiar a español"
+            class="block text-sm transition-all duration-150 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+            onmouseover="this.style.color='#CDA45C';"
+            onmouseout="this.style.color='#3B372E';"
+          >
+            Español
+          </a>
+        </div>
+      </div>
+    </nav>
+    <main
+      id="content"
+      class="py-8 sm:py-10 md:py-12"
+      style="background-color: #f2e6d3; border-top: 1px solid #cda45c"
+    >
+      <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <!-- Title -->
+        <h1
+          class="text-center text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight"
+          style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+        >
+          Chapter 7 Bankruptcy: Liquidation and a Fresh Start
+        </h1>
+
+        <!-- Top CTA strip -->
+        <div
+          class="mt-4 w-full flex flex-col md:flex-row gap-3 md:gap-4 md:justify-center md:items-center"
+        >
+          <a
+            href="/contact/"
+            class="inline-flex justify-center items-center w-full min-w-[12rem] sm:w-auto px-4 py-2.5 text-sm sm:text-base rounded-md text-center shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              background-color: #3b372e;
+              color: #f2e6d3;
+              border: 1px solid #3b372e;
+              text-decoration: none;
+            "
+            onmouseover="this.style.backgroundColor='#CDA45C'; this.style.color='#F2E6D3'; this.style.borderColor='#CDA45C';"
+            onmouseout="this.style.backgroundColor='#3B372E'; this.style.color='#F2E6D3'; this.style.borderColor='#3B372E';"
+          >
+            Initial Case Review
+          </a>
+
+          <a
+            href="tel:+19045550123"
+            class="inline-flex justify-center items-center w-full md:w-auto md:min-w-48 px-4 py-2.5 text-sm sm:text-base rounded-md text-center shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              border: 1px solid #cda45c;
+              background-color: transparent;
+              text-decoration: none;
+            "
+            onmouseover="this.style.backgroundColor='#CDA45C'; this.style.color='#F2E6D3';"
+            onmouseout="this.style.backgroundColor='transparent'; this.style.color='#3B372E';"
+          >
+            Or call (904) 555-0123
+          </a>
+        </div>
+
+        <!-- Article body -->
+        <article
+          class="prose prose-neutral max-w-none text-[0.95rem] sm:text-base leading-relaxed mt-6"
+          style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+        >
+          <p>
+            Chapter 7 bankruptcy is the most common form of consumer bankruptcy.
+            It is often described as liquidation bankruptcy because its purpose
+            is to eliminate unsecured debt in exchange for the turnover of any
+            nonexempt assets, if any exist. In many consumer cases, there is
+            nothing to liquidate at all, which is why most Chapter 7 cases are
+            no-asset cases.
+          </p>
+
+          <p>
+            Chapter 7 is designed for people who need a fast reset and do not
+            have the income or circumstances that make a repayment plan
+            practical or required.
+          </p>
+
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            How Chapter 7 Works
+          </h2>
+
+          <p>
+            When a Chapter 7 case is filed, a bankruptcy trustee is appointed to
+            review the debtor’s assets, liabilities, income, and financial
+            history. The trustee’s role is to determine whether there are assets
+            that can be liquidated for the benefit of creditors and to ensure
+            that the debtor has complied with the Bankruptcy Code.
+          </p>
+
+          <p>
+            If the trustee determines that all assets are exempt or have no
+            meaningful liquidation value, the trustee will administer the case
+            as a no-asset case. If nonexempt assets exist and liquidation would
+            benefit creditors, the trustee may take control of those assets and
+            sell them.
+          </p>
+
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            Liquidation Value and Trustee Discretion
+          </h2>
+
+          <p>
+            Not every asset that is technically nonexempt will actually be
+            liquidated. Trustees are required to consider whether liquidating an
+            asset would produce a meaningful benefit for creditors.
+          </p>
+
+          <p>
+            If the cost of seizing, storing, selling, and distributing the
+            proceeds of an asset would outweigh or substantially reduce any
+            benefit to creditors, the trustee may abandon the asset. This
+            commonly occurs with assets that have modest value, limited
+            marketability, or significant administrative burden.
+          </p>
+
+          <p>
+            Abandonment means the asset is removed from the bankruptcy estate
+            and remains with the debtor, even though it may not have been fully
+            exempt.
+          </p>
+
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            What Gets Liquidated and What Does Not
+          </h2>
+
+          <p>
+            Exempt property is protected and cannot be liquidated. Nonexempt
+            property may be subject to liquidation if doing so makes economic
+            sense.
+          </p>
+
+          <p>
+            Most consumer Chapter 7 cases involve little or no liquidation
+            because exemptions protect the debtor’s home, vehicle, retirement
+            accounts, public benefits, and ordinary personal property. When
+            liquidation does occur, it typically involves assets such as
+            nonexempt cash, valuable collectibles, investment property, or other
+            assets that exceed exemption limits.
+          </p>
+
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            Turnover of Property and Money Owed to the Debtor
+          </h2>
+
+          <p>
+            Chapter 7 focuses on collecting and liquidating property of the
+            bankruptcy estate. This includes not only physical assets, but also
+            money owed to the debtor by others at the time of filing.
+          </p>
+
+          <p>
+            If a debtor is owed money, such as unpaid wages, a personal loan
+            receivable, or settlement proceeds, the trustee may seek turnover of
+            those funds. Turnover is the legal process by which the trustee
+            demands delivery of estate property so it can be administered for
+            creditors.
+          </p>
+
+          <p>
+            Turnover actions are far more common in Chapter 7 than in Chapter 13
+            because Chapter 7 is designed to collect and liquidate assets, while
+            Chapter 13 allows the debtor to retain property in exchange for a
+            repayment plan.
+          </p>
+
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            The Means Test and Eligibility
+          </h2>
+
+          <p>
+            Chapter 7 eligibility is governed by the means test. The means test
+            compares the debtor’s income to the applicable median income and
+            evaluates disposable income under statutory standards.
+          </p>
+
+          <p>
+            Debtors who fail the means test may be required to file under
+            Chapter 13 instead. Passing the means test does not guarantee a
+            no-asset case, but it determines whether Chapter 7 relief is
+            available.
+          </p>
+
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            The Timeline and Discharge
+          </h2>
+
+          <p>
+            Chapter 7 cases move quickly. After filing, the automatic stay goes
+            into effect, stopping collection activity. A 341 meeting is held,
+            and if no issues arise, the case proceeds toward discharge.
+          </p>
+
+          <p>
+            Creditors are given a limited window to object to discharge or
+            challenge the dischargeability of specific debts. If no objections
+            are filed, the court enters a discharge order, usually within a few
+            months of filing. After discharge, the case is closed.
+          </p>
+
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            Credit Report Impact
+          </h2>
+
+          <p>
+            A Chapter 7 bankruptcy remains on a credit report longer than a
+            Chapter 13 bankruptcy. This reflects the fact that Chapter 7
+            provides a faster and more immediate discharge without a repayment
+            period.
+          </p>
+
+          <p>
+            While Chapter 7 stays on the credit report for a longer time, many
+            people begin rebuilding credit soon after discharge, especially once
+            unsecured debt has been eliminated and income is no longer being
+            diverted to collections or garnishments.
+          </p>
+
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            When Chapter 7 Makes Sense
+          </h2>
+
+          <p>
+            Chapter 7 is often the right choice for people who have overwhelming
+            unsecured debt, limited income, and no realistic ability to repay
+            creditors. It provides a clean break and a relatively fast path to
+            financial stability.
+          </p>
+
+          <p>
+            For others, particularly those with significant assets or higher
+            income, Chapter 13 may offer better protection. The right chapter
+            depends on the individual facts of each case.
+          </p>
+
+          <hr class="my-6" style="border: 0; border-top: 1px solid #e0d0b8" />
+
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            What Next
+          </h2>
+
+          <ul class="list-disc pl-5 mt-2">
+            <li>
+              Compare
+              <a
+                href="./7v13.html"
+                class="underline"
+                style="color: #3b372e"
+                onmouseover="this.style.color='#CDA45C';"
+                onmouseout="this.style.color='#3B372E';"
+                >Chapter 7 and Chapter 13</a
+              >
+              to understand the key differences.
+            </li>
+            <li>
+              Learn how
+              <a
+                href="./exemptions.html"
+                class="underline"
+                style="color: #3b372e"
+                onmouseover="this.style.color='#CDA45C';"
+                onmouseout="this.style.color='#3B372E';"
+                >Bankruptcy Exemptions</a
+              >
+              protect property in a Chapter 7 case.
+            </li>
+            <li>
+              See how the
+              <a
+                href="./automatic-stay.html"
+                class="underline"
+                style="color: #3b372e"
+                onmouseover="this.style.color='#CDA45C';"
+                onmouseout="this.style.color='#3B372E';"
+                >Automatic Stay</a
+              >
+              provides immediate relief once a case is filed.
+            </li>
+          </ul>
+        </article>
+
+        <!-- Bottom CTA -->
+        <div
+          class="mt-8 w-full flex flex-col md:flex-row gap-3 md:gap-4 md:justify-center md:items-center"
+        >
+          <a
+            href="/contact/"
+            class="inline-flex justify-center items-center w-full min-w-[12rem] sm:w-auto px-4 py-2.5 text-sm sm:text-base rounded-md text-center shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              background-color: #3b372e;
+              color: #f2e6d3;
+              border: 1px solid #3b372e;
+              text-decoration: none;
+            "
+            onmouseover="this.style.backgroundColor='#CDA45C'; this.style.color='#F2E6D3'; this.style.borderColor='#CDA45C';"
+            onmouseout="this.style.backgroundColor='#3B372E'; this.style.color='#F2E6D3'; this.style.borderColor='#3B372E';"
+          >
+            Initial Case Review
+          </a>
+
+          <a
+            href="./resources.html"
+            class="inline-flex justify-center items-center w-full md:w-auto md:min-w-48 px-4 py-2.5 text-sm sm:text-base rounded-md text-center shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              border: 1px solid #cda45c;
+              background-color: transparent;
+              text-decoration: none;
+            "
+            onmouseover="this.style.backgroundColor='#CDA45C'; this.style.color='#F2E6D3';"
+            onmouseout="this.style.backgroundColor='transparent'; this.style.color='#3B372E';"
+          >
+            More resources
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="border-t"
+      style="background-color: #f2e6d3; border-color: #cda45c"
+    >
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="py-6 sm:py-8">
+          <!-- Firm Name -->
+          <div
+            class="text-xl font-semibold tracking-tight"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            Crespo &amp; Crespo
+          </div>
+
+          <!-- Licensing -->
+          <p
+            class="mt-1 text-sm opacity-90 leading-relaxed"
+            style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+          >
+            Managing Partner licensed in Florida:
+            <span style="font-weight: 600">Alejandro Crespo</span>
+            <br />
+            Licensed in Florida &amp; Puerto Rico
+          </p>
+
+          <!-- Language Switch -->
+          <div class="mt-3 text-sm">
+            <a
+              id="lang-switch-footer"
+              href="./es/"
+              aria-label="Change language"
+              class="transition-colors duration-150"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+                border-bottom: 1px solid #cda45c;
+              "
+              onmouseover="this.style.color='#CDA45C';"
+              onmouseout="this.style.color='#3B372E';"
+            >
+              Español
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./../scripts/navbar.js" defer></script>
+    <script src="./../scripts/footer.js" defer></script>
+  </body>
+</html>

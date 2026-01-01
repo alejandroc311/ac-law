@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./../../style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Capítulo 7</title>
+  </head>
+  <body>
+    <nav
+      class="sticky top-0 z-50 border-b"
+      style="background-color: #ebd9c3; border-color: #cda45c"
+    >
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="h-16 flex items-center justify-between">
+          <!-- Brand -->
+          <a
+            href="./../index.html"
+            class="shrink-0 text-2xl font-semibold tracking-tight"
+            style="
+              font-family: 'Cormorant Garamond', serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+          >
+            Crespo &amp; Crespo
+          </a>
+
+          <!-- Desktop nav -->
+          <div class="hidden md:flex items-center gap-6">
+            <a
+              href="./../index.html"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+              onmouseover="this.style.color='#CDA45C';"
+              onmouseout="this.style.color='#3B372E';"
+            >
+              Inicio
+            </a>
+
+            <a
+              href="./resources.html"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+              onmouseover="this.style.color='#CDA45C';"
+              onmouseout="this.style.color='#3B372E';"
+            >
+              Recursos
+            </a>
+
+            <a
+              href="/contact/"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+              onmouseover="this.style.color='#CDA45C';"
+              onmouseout="this.style.color='#3B372E';"
+            >
+              Contacto
+            </a>
+
+            <a
+              id="lang-switch-desktop"
+              href="./../index.html"
+              class="text-sm transition-all duration-150 ease-out hover:-translate-y-0.5"
+              aria-label="Switch to English"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+              "
+              onmouseover="this.style.color='#CDA45C';"
+              onmouseout="this.style.color='#3B372E';"
+            >
+              English
+            </a>
+          </div>
+
+          <!-- Mobile hamburger -->
+          <button
+            id="nav-toggle"
+            class="md:hidden inline-flex items-center justify-center rounded-md p-2"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            aria-label="Toggle menu"
+            type="button"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+              style="color: #3b372e"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile dropdown -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden border-t"
+        style="border-color: #cda45c"
+      >
+        <div class="px-4 py-3 space-y-2">
+          <a
+            href="./../index.html"
+            class="block text-sm transition-all duration-150 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+            onmouseover="this.style.color='#CDA45C';"
+            onmouseout="this.style.color='#3B372E';"
+          >
+            Inicio
+          </a>
+
+          <a
+            href="./resources.html"
+            class="block text-sm transition-all duration-150 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+            onmouseover="this.style.color='#CDA45C';"
+            onmouseout="this.style.color='#3B372E';"
+          >
+            Recursos
+          </a>
+
+          <a
+            href="/contact/"
+            class="block text-sm transition-all duration-150 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+            onmouseover="this.style.color='#CDA45C';"
+            onmouseout="this.style.color='#3B372E';"
+          >
+            Contacto
+          </a>
+
+          <a
+            id="lang-switch-mobile"
+            href="./../index.html"
+            class="block text-sm transition-all duration-150 ease-out"
+            aria-label="Switch to English"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              text-decoration: none;
+            "
+            onmouseover="this.style.color='#CDA45C';"
+            onmouseout="this.style.color='#3B372E';"
+          >
+            English
+          </a>
+        </div>
+      </div>
+    </nav>
+    <main
+      id="content"
+      class="py-8 sm:py-10 md:py-12"
+      style="background-color: #f2e6d3; border-top: 1px solid #cda45c"
+    >
+      <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <!-- Title -->
+        <h1
+          class="text-center text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight"
+          style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+        >
+          Quiebra Bajo el Capítulo 7: Liquidación y un Nuevo Comienzo
+        </h1>
+
+        <!-- Top CTA strip -->
+        <div
+          class="mt-4 w-full flex flex-col md:flex-row gap-3 md:gap-4 md:justify-center md:items-center"
+        >
+          <!-- PRIMARY CTA -->
+          <a
+            href="/contact/"
+            class="inline-flex justify-center items-center w-full min-w-[12rem] sm:w-auto px-4 py-2.5 text-sm sm:text-base rounded-md text-center shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              background-color: #3b372e;
+              color: #f2e6d3;
+              border: 1px solid #3b372e;
+              text-decoration: none;
+            "
+            onmouseover="this.style.backgroundColor='#CDA45C'; this.style.color='#F2E6D3'; this.style.borderColor='#CDA45C';"
+            onmouseout="this.style.backgroundColor='#3B372E'; this.style.color='#F2E6D3'; this.style.borderColor='#3B372E';"
+          >
+            Consulta Inicial
+          </a>
+
+          <!-- SECONDARY CTA -->
+          <a
+            href="tel:+19045550123"
+            class="inline-flex justify-center items-center w-full md:w-auto md:min-w-48 px-4 py-2.5 text-sm sm:text-base rounded-md text-center shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              border: 1px solid #cda45c;
+              background-color: transparent;
+              text-decoration: none;
+            "
+            onmouseover="this.style.backgroundColor='#CDA45C'; this.style.color='#F2E6D3';"
+            onmouseout="this.style.backgroundColor='transparent'; this.style.color='#3B372E';"
+          >
+            O llame al (904) 555-0123
+          </a>
+        </div>
+
+        <!-- Article body -->
+        <article
+          class="prose prose-neutral max-w-none text-[0.95rem] sm:text-base leading-relaxed mt-6"
+          style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+        >
+          <p>
+            La quiebra bajo el Capítulo 7 es el tipo de quiebra de consumidor
+            más común. A menudo se describe como una quiebra de liquidación
+            porque su propósito es eliminar deudas no garantizadas a cambio de
+            entregar cualquier activo que no esté exento, si es que existe
+            alguno. En muchos casos de consumidor, no hay nada que liquidar,
+            razón por la cual la mayoría de los casos bajo el Capítulo 7 son
+            casos sin activos.
+          </p>
+
+          <p>
+            El Capítulo 7 está diseñado para personas que necesitan un reinicio
+            rápido y no tienen el ingreso o activos que hagan práctico o
+            requerido un plan de repago.
+          </p>
+
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            Cómo Funciona el Capítulo 7
+          </h2>
+
+          <p>
+            Cuando se radica un caso bajo el Capítulo 7, se asigna un síndico
+            para revisar los activos, deudas, ingresos y el historial financiero
+            del deudor. El rol del síndico es determinar si existen activos que
+            puedan liquidarse en beneficio de los acreedores y verificar que el
+            deudor haya cumplido con el Código de Quiebras.
+          </p>
+
+          <p>
+            Si el síndico determina que todos los activos están exentos o que no
+            tienen un valor real de liquidación, el caso se administra como un
+            caso sin activos. Si existen activos no exentos y su liquidación
+            beneficiaría a los acreedores, el síndico puede tomar control de
+            esos activos y venderlos al mejor postor.
+          </p>
+
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            Valor de Liquidación y Discreción del Síndico
+          </h2>
+
+          <p>
+            No todo activo que técnicamente no esté exento necesariamente se va
+            a liquidar. El síndico debe evaluar si liquidar un activo produciría
+            un beneficio significativo para los acreedores.
+          </p>
+
+          <p>
+            Si el costo de ocupar, almacenar, mercadear, vender y distribuir los
+            fondos supera o reduce sustancialmente cualquier beneficio, el
+            síndico puede abandonar el activo. Esto ocurre con frecuencia cuando
+            el activo tiene valor limitado, poca demanda o un costo
+            administrativo alto.
+          </p>
+
+          <p>
+            El abandono significa que el activo sale del caudal de la quiebra y
+            permanece con el deudor, aun cuando dicho activo no haya estado
+            totalmente exento.
+          </p>
+
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            Qué se Liquida y Qué No
+          </h2>
+
+          <p>
+            La propiedad exenta está protegida y no puede liquidarse. La
+            propiedad no exenta puede ser liquidada si hacerlo tiene sentido
+            económico.
+          </p>
+
+          <p>
+            La mayoría de los casos de Capítulo 7 de consumidor implican poca o
+            ninguna liquidación, ya que las exenciones suelen proteger la
+            residencia, el vehículo, cuentas de retiro, beneficios públicos y
+            pertenencias personales. Cuando sí ocurre liquidación, normalmente
+            involucra efectivo no exento, coleccionables valiosos, propiedad de
+            inversión u otros activos que exceden los límites de exención.
+          </p>
+
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            Entrega de Propiedad y Dinero Adeudado al Deudor
+          </h2>
+
+          <p>
+            El Capítulo 7 se enfoca en identificar y liquidar propiedad del
+            caudal de la quiebra. Esto incluye no solo activos físicos, sino
+            también dinero que terceros le deban al deudor al momento de
+            radicar.
+          </p>
+
+          <p>
+            Si al deudor le deben dinero, el síndico puede solicitar su entrega
+            mediante el proceso legal correspondiente. Las gestiones de entrega
+            son mucho más comunes en Capítulo 7 que en Capítulo 13.
+          </p>
+
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            La Prueba de Recursos y Elegibilidad
+          </h2>
+
+          <p>
+            La elegibilidad para el Capítulo 7 se rige por la prueba de
+            recursos, que compara los ingresos del deudor con el ingreso mediano
+            aplicable y evalúa el ingreso disponible bajo criterios establecidos
+            por ley.
+          </p>
+
+          <p>
+            No pasar la prueba puede requerir que el caso se radique bajo el
+            Capítulo 13. Pasarla no garantiza un caso sin activos, pero sí
+            determina si el Capítulo 7 está disponible.
+          </p>
+
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            El Procedimiento y la Descarga
+          </h2>
+
+          <p>
+            Los casos bajo el Capítulo 7 avanzan rápidamente. Luego de la
+            radicación, entra en vigor la paralización automática, se celebra la
+            reunión 341 y, si no surgen objeciones, el tribunal emite la
+            descarga en cuestión de meses.
+          </p>
+
+          <p>
+            Luego de la descarga, las deudas elegibles se eliminan y el caso se
+            cierra.
+          </p>
+
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            Impacto en el Crédito
+          </h2>
+
+          <p>
+            Una quiebra bajo el Capítulo 7 permanece en el crédito por más
+            tiempo que una bajo el Capítulo 13. Aun así, muchas personas
+            comienzan a reconstruir crédito poco después de la descarga.
+          </p>
+
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            Cuándo Hace Sentido el Capítulo 7
+          </h2>
+
+          <p>
+            El Capítulo 7 suele ser ideal para personas con deuda no garantizada
+            abrumadora, ingresos limitados y ninguna capacidad realista de
+            repago.
+          </p>
+
+          <hr class="my-6" style="border: 0; border-top: 1px solid #e0d0b8" />
+
+          <h2
+            class="text-center text-lg sm:text-xl font-semibold"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            ¿Y ahora qué?
+          </h2>
+
+          <ul class="list-disc pl-5 mt-2">
+            <li>
+              Compare
+              <a
+                href="./7v13.html"
+                class="underline"
+                style="color: #3b372e"
+                onmouseover="this.style.color='#CDA45C';"
+                onmouseout="this.style.color='#3B372E';"
+              >
+                el Capítulo 7 y el Capítulo 13
+              </a>
+              para entender las diferencias clave.
+            </li>
+
+            <li>
+              Lea cómo las
+              <a
+                href="./exemptions.html"
+                class="underline"
+                style="color: #3b372e"
+                onmouseover="this.style.color='#CDA45C';"
+                onmouseout="this.style.color='#3B372E';"
+              >
+                Exenciones de Quiebra
+              </a>
+              protegen su propiedad en un caso bajo el Capítulo 7.
+            </li>
+
+            <li>
+              Vea cómo la
+              <a
+                href="./automatic-stay.html"
+                class="underline"
+                style="color: #3b372e"
+                onmouseover="this.style.color='#CDA45C';"
+                onmouseout="this.style.color='#3B372E';"
+              >
+                Paralización Automática
+              </a>
+              le da alivio inmediato al radicar.
+            </li>
+          </ul>
+        </article>
+
+        <!-- Bottom CTA -->
+        <div
+          class="mt-8 w-full flex flex-col md:flex-row gap-3 md:gap-4 md:justify-center md:items-center"
+        >
+          <a
+            href="/contact/"
+            class="inline-flex justify-center items-center w-full min-w-[12rem] sm:w-auto px-4 py-2.5 text-sm sm:text-base rounded-md text-center shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              background-color: #3b372e;
+              color: #f2e6d3;
+              border: 1px solid #3b372e;
+              text-decoration: none;
+            "
+            onmouseover="this.style.backgroundColor='#CDA45C'; this.style.color='#F2E6D3'; this.style.borderColor='#CDA45C';"
+            onmouseout="this.style.backgroundColor='#3B372E'; this.style.color='#F2E6D3'; this.style.borderColor='#3B372E';"
+          >
+            Consulta Inicial
+          </a>
+
+          <a
+            href="./resources.html"
+            class="inline-flex justify-center items-center w-full md:w-auto md:min-w-48 px-4 py-2.5 text-sm sm:text-base rounded-md text-center shadow-sm hover:-translate-y-0.5 transition-colors transition-transform duration-200 ease-out"
+            style="
+              font-family: 'Montserrat', sans-serif;
+              color: #3b372e;
+              border: 1px solid #cda45c;
+              background-color: transparent;
+              text-decoration: none;
+            "
+            onmouseover="this.style.backgroundColor='#CDA45C'; this.style.color='#F2E6D3';"
+            onmouseout="this.style.backgroundColor='transparent'; this.style.color='#3B372E';"
+          >
+            Más recursos
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="border-t"
+      style="background-color: #f2e6d3; border-color: #cda45c"
+    >
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="py-6 sm:py-8">
+          <!-- Firm Name -->
+          <div
+            class="text-xl font-semibold tracking-tight"
+            style="font-family: 'Cormorant Garamond', serif; color: #3b372e"
+          >
+            Crespo &amp; Crespo
+          </div>
+
+          <!-- Licensing -->
+          <p
+            class="mt-1 text-sm opacity-90 leading-relaxed"
+            style="font-family: 'Montserrat', sans-serif; color: #3b372e"
+          >
+            Socio Administrador con licencia en Florida:
+            <span style="font-weight: 600">Alejandro Crespo</span>
+            <br />
+            Licenciados en Florida y Puerto Rico
+          </p>
+
+          <!-- Language Switch -->
+          <div class="mt-3 text-sm">
+            <a
+              id="lang-switch-footer"
+              href="../index.html"
+              aria-label="Switch to English"
+              class="transition-colors duration-150"
+              style="
+                font-family: 'Montserrat', sans-serif;
+                color: #3b372e;
+                text-decoration: none;
+                border-bottom: 1px solid #cda45c;
+              "
+              onmouseover="this.style.color='#CDA45C';"
+              onmouseout="this.style.color='#3B372E';"
+            >
+              English
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./../../scripts/navbar.js" defer></script>
+    <script src="./../../scripts/footer.js" defer></script>
+  </body>
+</html>
