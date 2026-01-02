@@ -39,38 +39,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* ===== helper: build counterpart URL reliably on file:// and http(s) ===== */
 function computeLangCounterpart() {
-  const path = location.pathname;                 // absolute OS path under file://, site path under http
+  const path = location.pathname;
   const searchHash = (location.search || '') + (location.hash || '');
 
-  // Find the first “anchor” folder that marks the start of page-relative path
-  const anchors = ['/es/', '/content/', '/resources/', '/index.html'];
+  const anchors = ['/es/', '/content/', '/resources/', '/index.html', '/contact.html'];
+
   let idx = -1, anchor = '';
   for (const a of anchors) {
     const i = path.indexOf(a);
     if (i !== -1 && (idx === -1 || i < idx)) { idx = i; anchor = a; }
   }
 
-  // If none found, fall back to entire path (shouldn’t happen with your structure)
   if (idx === -1) {
-    // Toggle simply at the very beginning
     const relFallback = path.replace(/^\//, '') || 'index.html';
-    const toggled = relFallback.startsWith('es/') ? relFallback.replace(/^es\//, '') : 'es/' + relFallback;
+    const toggled = relFallback.startsWith('es/')
+      ? relFallback.replace(/^es\//, '')
+      : 'es/' + relFallback;
     return location.origin + '/' + toggled + searchHash;
   }
 
-  // Absolute root path up to (but not including) the anchor (keeps full OS path on file://)
   const rootPath = path.slice(0, idx);
 
-  // Relative part starting at the anchor (normalize directories to index.html)
   let rel = path.slice(idx);
   if (rel.endsWith('/')) rel += 'index.html';
-  if (rel === '/index.html') rel = 'index.html';           // root English
-  else if (rel.startsWith('/')) rel = rel.slice(1);        // drop leading slash => e.g. "content/x.html" or "es/content/x.html"
 
-  // Toggle leading "es/"
+  // Treat root-level pages correctly when the anchor is the filename
+  if (rel === '/index.html') rel = 'index.html';
+  else if (rel === '/contact.html') rel = 'contact.html';
+  else if (rel.startsWith('/')) rel = rel.slice(1);
+
   const toggledRel = rel.startsWith('es/') ? rel.replace(/^es\//, '') : 'es/' + rel;
 
-  // Rebuild absolute path preserving scheme/origin
-  // On file://, origin is "file://"; on http, it's "https://domain"
   return location.origin + rootPath + (rootPath.endsWith('/') ? '' : '/') + toggledRel + searchHash;
 }
+
