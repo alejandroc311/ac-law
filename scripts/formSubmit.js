@@ -52,7 +52,7 @@ function getComment(){
 }
 
 $(function(){
-    $('.contactForm').submit(function(event){
+    $('#contactForm').submit(function(event){
         event.preventDefault();
         console.log("Submit event is fired");
         var data = {
