@@ -1,65 +1,52 @@
 (() => {
   const LANG_URL_MAP = {
-    "bankruptcy/index.html": "quiebras/",
-    "quiebras/index.html": "bankruptcy/",
+  // Section homepages
+  "bankruptcy/index.html": "quiebras/",
+  "quiebras/index.html": "bankruptcy/",
 
-    "bankruptcy/contact.html": "quiebras/contact.html",
-    "quiebras/contact.html": "bankruptcy/contact.html",
+  // Contact
+  "bankruptcy/contact/index.html": "quiebras/contact/",
+  "quiebras/contact/index.html": "bankruptcy/contact/",
 
-    "bankruptcy/resources/resources.html": "quiebras/resources/resources.html",
-    "quiebras/resources/resources.html": "bankruptcy/resources/resources.html",
+  // Resources hub
+  "bankruptcy/resources/index.html": "quiebras/resources/",
+  "quiebras/resources/index.html": "bankruptcy/resources/",
 
-    "bankruptcy/resources/chapter-7.html": "quiebras/resources/capitulo-7.html",
-    "quiebras/resources/capitulo-7.html": "bankruptcy/resources/chapter-7.html",
+  // Resources pages
+  "bankruptcy/resources/chapter-7/index.html": "quiebras/resources/capitulo-7/",
+  "quiebras/resources/capitulo-7/index.html": "bankruptcy/resources/chapter-7/",
 
-    "bankruptcy/resources/chapter-13.html":
-      "quiebras/resources/capitulo-13.html",
-    "quiebras/resources/capitulo-13.html":
-      "bankruptcy/resources/chapter-13.html",
+  "bankruptcy/resources/chapter-13/index.html": "quiebras/resources/capitulo-13/",
+  "quiebras/resources/capitulo-13/index.html": "bankruptcy/resources/chapter-13/",
 
-    "bankruptcy/resources/automatic-stay.html":
-      "quiebras/resources/paralizacion-automatica.html",
-    "quiebras/resources/paralizacion-automatica.html":
-      "bankruptcy/resources/automatic-stay.html",
+  "bankruptcy/resources/automatic-stay/index.html": "quiebras/resources/paralizacion-automatica/",
+  "quiebras/resources/paralizacion-automatica/index.html": "bankruptcy/resources/automatic-stay/",
 
-    "bankruptcy/resources/means-test.html":
-      "quiebras/resources/prueba-de-recursos.html",
-    "quiebras/resources/prueba-de-recursos.html":
-      "bankruptcy/resources/means-test.html",
+  "bankruptcy/resources/means-test/index.html": "quiebras/resources/prueba-de-recursos/",
+  "quiebras/resources/prueba-de-recursos/index.html": "bankruptcy/resources/means-test/",
 
-    "bankruptcy/resources/exemptions.html":
-      "quiebras/resources/exenciones-de-quiebra.html",
-    "quiebras/resources/exenciones-de-quiebra.html":
-      "bankruptcy/resources/exemptions.html",
+  "bankruptcy/resources/exemptions/index.html": "quiebras/resources/exenciones-de-quiebra/",
+  "quiebras/resources/exenciones-de-quiebra/index.html": "bankruptcy/resources/exemptions/",
 
-    "bankruptcy/resources/dischargeable.html":
-      "quiebras/resources/deudas-descargables.html",
-    "quiebras/resources/deudas-descargables.html":
-      "bankruptcy/resources/dischargeable.html",
+  "bankruptcy/resources/dischargeable/index.html": "quiebras/resources/deudas-descargables/",
+  "quiebras/resources/deudas-descargables/index.html": "bankruptcy/resources/dischargeable/",
 
-    "bankruptcy/resources/7v13.html":
-      "quiebras/resources/capitulo-7-vs-capitulo-13.html",
-    "quiebras/resources/capitulo-7-vs-capitulo-13.html":
-      "bankruptcy/resources/7v13.html",
+  "bankruptcy/resources/7v13/index.html": "quiebras/resources/capitulo-7-vs-capitulo-13/",
+  "quiebras/resources/capitulo-7-vs-capitulo-13/index.html": "bankruptcy/resources/7v13/",
 
-    "bankruptcy/resources/timeline.html":
-      "quiebras/resources/procedimiento-de-quiebras.html",
-    "quiebras/resources/procedimiento-de-quiebras.html":
-      "bankruptcy/resources/timeline.html",
+  "bankruptcy/resources/timeline/index.html": "quiebras/resources/procedimiento-de-quiebras/",
+  "quiebras/resources/procedimiento-de-quiebras/index.html": "bankruptcy/resources/timeline/",
 
-    "bankruptcy/content/garnishment.html": "quiebras/content/embargo.html",
-    "quiebras/content/embargo.html": "bankruptcy/content/garnishment.html",
+  // Content pages
+  "bankruptcy/content/garnishment/index.html": "quiebras/content/embargo/",
+  "quiebras/content/embargo/index.html": "bankruptcy/content/garnishment/",
 
-    "bankruptcy/content/foreclosure.html":
-      "quiebras/content/ejecucion-de-hipoteca.html",
-    "quiebras/content/ejecucion-de-hipoteca.html":
-      "bankruptcy/content/foreclosure.html",
+  "bankruptcy/content/foreclosure/index.html": "quiebras/content/ejecucion-de-hipoteca/",
+  "quiebras/content/ejecucion-de-hipoteca/index.html": "bankruptcy/content/foreclosure/",
 
-    "bankruptcy/content/bustout.html":
-      "quiebras/content/deudas-agobiantes.html",
-    "quiebras/content/deudas-agobiantes.html":
-      "bankruptcy/content/bustout.html",
-  };
+  "bankruptcy/content/bustout/index.html": "quiebras/content/deudas-agobiantes/",
+  "quiebras/content/deudas-agobiantes/index.html": "bankruptcy/content/bustout/",
+};
 
   document.addEventListener("DOMContentLoaded", () => {
     /* ========= 1) Mobile menu ========= */
