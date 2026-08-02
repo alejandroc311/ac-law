@@ -8,24 +8,22 @@ import re
 
 TARGET_DIR = Path("bankruptcy")
 
-TEL_NUMBER = "+19048224739"
-DISPLAY_NUMBER = "(904) 822-4739"
+REAL_TEL = "+19048224739"
+REAL_DISPLAY = "(904) 822-4739"
 
 changed = []
 
-# Common ways your PR number may appear
 patterns = [
-    # tel links
-    (r'tel:\+?1?787[-\s]?476[-\s]?4562', f'tel:{TEL_NUMBER}'),
-    (r'tel:\+?1?7874764562', f'tel:{TEL_NUMBER}'),
-    (r'tel:\+17874764562', f'tel:{TEL_NUMBER}'),
+    # Fake placeholder display numbers
+    (r'\(904\)\s*555[-\s]?0123', REAL_DISPLAY),
+    (r'904[-\s]?555[-\s]?0123', REAL_DISPLAY),
+    (r'904\.555\.0123', REAL_DISPLAY),
+    (r'\+1\s*904[-\s]?555[-\s]?0123', REAL_DISPLAY),
+    (r'\+19045550123', REAL_DISPLAY),
 
-    # visible/display numbers
-    (r'\+1\s*787[-\s]?476[-\s]?4562', DISPLAY_NUMBER),
-    (r'\+17874764562', DISPLAY_NUMBER),
-    (r'\(787\)\s*476[-\s]?4562', DISPLAY_NUMBER),
-    (r'787[-\s]?476[-\s]?4562', DISPLAY_NUMBER),
-    (r'787\.476\.4562', DISPLAY_NUMBER),
+    # Fake placeholder tel links, just in case any remain
+    (r'tel:\+?1?904[-\s]?555[-\s]?0123', f'tel:{REAL_TEL}'),
+    (r'tel:\+19045550123', f'tel:{REAL_TEL}'),
 ]
 
 for file in TARGET_DIR.rglob("*"):
