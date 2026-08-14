@@ -4,6 +4,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.crespocrespolaw.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.crespocrespolaw.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.crespocrespolaw.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.crespocrespolaw.com/" />
+  </url>
+
+  <url>
+    <loc>https://www.crespocrespolaw.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.crespocrespolaw.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.crespocrespolaw.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.crespocrespolaw.com/" />
+  </url>
+
+  <url>
+    <loc>https://www.crespocrespolaw.com/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.crespocrespolaw.com/contact/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.crespocrespolaw.com/es/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.crespocrespolaw.com/contact/" />
+  </url>
+
+  <url>
+    <loc>https://www.crespocrespolaw.com/es/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.crespocrespolaw.com/contact/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.crespocrespolaw.com/es/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.crespocrespolaw.com/contact/" />
+  </url>
+
+  <url>
     <loc>https://www.crespocrespolaw.com/bankruptcy/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.crespocrespolaw.com/bankruptcy/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://www.crespocrespolaw.com/quiebras/" />
